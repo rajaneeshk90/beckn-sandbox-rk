@@ -1,7 +1,7 @@
 {
     "context": {
         "domain": "dhp:consultation:0.1.0",
-        "action": "on_cancel",
+        "action": "on_init",
         "location": {
             "country": {
                 "name": "India",
@@ -20,7 +20,6 @@
     },
     "message": {
         "order": {
-            "id": "759b905c-5a30-4d18-a6af-0decbac9282f",
             "provider": {
                 "id": "289edce4-d002-4962-b311-4c025e22b4f6",
                 "descriptor": {
@@ -50,6 +49,31 @@
                     "fulfillment_ids": ["ful-01"],
                     "time": {
                         "duration": "PT30M"
+                    },
+                    "xinput": {
+                        "required": true,
+                        "head": {
+                            "descriptor": {
+                                "name": "Medical Information"
+                            },
+                            "index": {
+                                "min": 0,
+                                "cur": 0,
+                                "max": 0
+                            },
+                            "headings": ["Medical Information"]
+                        },
+                        "form": {
+                            "mime_type": "text/html",
+                            "url": "https://6vs8xnx5i7.Examplehospitals.co.in/medical-details/xinput/formid/a23f2fdfbbb8ac402bfd54f",
+                            "resubmit": false,
+                            "auth": {
+                                "descriptor": {
+                                    "code": "jwt"
+                                },
+                                "value": "eyJhbGciOiJIUzI.eyJzdWIiOiIxMjM0NTY3O.SflKxwRJSMeKKF2QT4"
+                            }
+                        }
                     }
                 }
             ],
@@ -69,23 +93,63 @@
                             "email": "jane.doe@example.com"
                         }
                     },
-                    "state": {
-                        "descriptor": {
-                            "code": "slot-cancelled",
-                            "name": "Slot has been Cancelled"
-                        }
-                    },
                     "agent": {
                         "person": {
                             "id": "237402938409485039850935",
                             "name": "Dr Asthana",
-                            "gender": "male"
-                        }
+                            "gender": "male",
+                            "creds": [
+                                {
+                                    "id": "237402938409485039850935",
+                                    "type": "VerifiableCredential",
+                                    "url": "https://www.aiims.com/honours/237402938409485039850935"
+                                }
+                            ],
+                            "languages": [
+                                {
+                                    "code": "hindi",
+                                    "name": "Hindi"
+                                },
+                                {
+                                    "code": "english",
+                                    "name": "English"
+                                },
+                                {
+                                    "code": "kannada",
+                                    "name": "Kannada"
+                                }
+                            ],
+                            "skills": [
+                                {
+                                    "code": "mbbs",
+                                    "name": "MBBS"
+                                },
+                                {
+                                    "code": "md",
+                                    "name": "MD"
+                                }
+                            ],
+                            "tags": [
+                                {
+                                    "display": true,
+                                    "descriptor": {
+                                        "code": "about",
+                                        "name": "About the Doctor"
+                                    },
+                                    "list": [
+                                        {
+                                            "value": "With over 10 years of experience in Orthopaedics"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "rating": "4.5"
                     },
                     "stops": [
                         {
                             "location": {
-                                "gps": "12.9716° N, 77.5946° E",
+                                "gps": "12.9164682,77.6089985",
                                 "address": "Akashya nagar B17/14",
                                 "state": {
                                     "name": "Madhya Pradesh"
@@ -98,8 +162,8 @@
                             "time": {
                                 "label": "Booking Slots",
                                 "range": {
-                                    "start": "2023-11-04 10:00",
-                                    "end": "2023-11-04 10:30"
+                                    "start": "2023-11-04T10:00:00.00Z",
+                                    "end": "2023-11-04T10:30:00.00Z"
                                 }
                             }
                         }
@@ -150,9 +214,8 @@
                         "bank_code": "INB0004321",
                         "bank_account_name": "Strapi BPP Limited"
                     },
-                    "status": "PAID",
-                    "type": "PRE-ORDER",
-                    "transaction_id": "a35b56cf-e5cf-41f1-9b5d-fa99d8d5ac8c"
+                    "status": "NOT-PAID",
+                    "type": "PRE-ORDER"
                 }
             ],
             "cancellation_terms": [
@@ -165,11 +228,7 @@
                         }
                     }
                 }
-            ],
-            "cancellation": {
-                "time": "2023-07-16T04:41:16Z",
-                "cancelled_by": "CONSUMER"
-            }
+            ]
         }
     }
 }
