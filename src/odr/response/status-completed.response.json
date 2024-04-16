@@ -53,7 +53,9 @@
                         "code": "arbitration-service",
                         "name": "Arbitration Services"
                     },
-                    "category_ids": ["ODRCAT001"]
+                    "category_ids": [
+                        "ODRCAT001"
+                    ]
                 }
             ],
             "quote": {
@@ -89,7 +91,9 @@
                 "name": "John Doe",
                 "email": "john.doe@example.com",
                 "address": "21A, ABC Appartments, HSR Layout, Bengaluru",
-                "city": { "name": "Bengaluru" }
+                "city": {
+                    "name": "Bengaluru"
+                }
             },
             "fulfillments": [
                 {
@@ -139,14 +143,12 @@
                     "type": "PRE-ORDER",
                     "params": {
                         "amount": "12000",
-                        "currency": "INR"
+                        "currency": "INR",
+                        "transaction_id": "tranIdajkdh37e8"
                     },
                     "status": "PAID",
                     "time": {
-                        "range": {
-                            "start": "2023-06-01T00:00:00.000Z",
-                            "end": "2023-06-30T23:59:59.000Z"
-                        }
+                        "timestamp": "82368943294"
                     }
                 }
             ],
