@@ -27,7 +27,7 @@
                     "long_desc": "Makerspace, Hof",
                     "images": [
                         {
-                            "url": "https://makerspace/3d/makerspace_logo.png",
+                            "url": "makerspace_logo.png",
                             "size_type": "sm"
                         }
                     ]
@@ -46,7 +46,9 @@
                         ],
                         "name": "SLA 3D Printing"
                     },
-                    "category_ids": ["p1c1"],
+                    "category_ids": [
+                        "p1c1"
+                    ],
                     "tags": [
                         {
                             "descriptor": {
@@ -150,10 +152,10 @@
                     "id": "f1",
                     "state": {
                         "descriptor": {
-                            "code": "ITEM_DISPATCHED",
-                            "short_desc": "The item has been dispatched from the factory..."
+                            "code": "PRINTING",
+                            "short_desc": "Items are getting printed..."
                         },
-                        "updated_at": "2023-05-26T05:23:04.443Z"
+                        "updated_at": "2023-05-26T05:03:04.443Z"
                     },
                     "customer": {
                         "contact": {
@@ -208,11 +210,12 @@
                         "currency": "EUR",
                         "bank_account_number": "1234002341",
                         "bank_code": "INB0004321",
-                        "bank_account_name": "Makerspace 3D printing Ltd"
+                        "source_bank_code": "YDYYE8789574",
+                        "source_bank_account_number": "54378958487",
+                        "transaction_id": "a35b56cf-e5cf-41f1-9b5d-fa99d8d5ac8c"
                     },
                     "status": "PAID",
-                    "type": "PRE-ORDER",
-                    "transaction_id": "a35b56cf-e5cf-41f1-9b5d-fa99d8d5ac8c"
+                    "type": "PRE-ORDER"
                 }
             ],
             "quote": {

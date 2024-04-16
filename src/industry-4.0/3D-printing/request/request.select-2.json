@@ -24,7 +24,11 @@
             },
             "items": [
                 {
-                    "id": "66b7b9bad166-4a3f-ada6-ca063dc9d321"
+                    "id": "66b7b9bad166-4a3f-ada6-ca063dc9d321",
+                    "xinput": {
+                        "url": "https://formurl/orderdetails/3d-printing",
+                        "submission_id": "id8973hdwe8r"
+                    }
                 }
             ],
             "fulfillments": [
@@ -32,9 +36,9 @@
                     "id": "f1"
                 }
             ],
-            "tags" : [
+            "tags": [
                 {
-                    "descriptor" : {
+                    "descriptor": {
                         "name": "select-2"
                     }
                 }
