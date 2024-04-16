@@ -56,9 +56,14 @@
                 {
                     "params": {
                         "amount": "12000",
-                        "currency": "INR"
+                        "currency": "INR",
+                        "transaction_id": "tranIdajkdh37e8"
                     },
-                    "status": "PAID"
+                    "type": "PRE-ORDER",
+                    "status": "PAID",
+                    "time": {
+                        "timestamp": "82368943294"
+                    }
                 }
             ]
         }
