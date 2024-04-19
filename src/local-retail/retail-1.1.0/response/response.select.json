@@ -58,7 +58,15 @@
       ],
       "fulfillments": [
         {
-          "id": "f1"
+          "id": "f1",
+          "type": "Delivery",
+          "stops": [
+            {
+              "location": {
+                "gps": "13.2008459,77.708736"
+              }
+            }
+          ]
         }
       ],
       "quote": {

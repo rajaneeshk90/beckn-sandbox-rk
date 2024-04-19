@@ -27,8 +27,8 @@
       "items": [
         {
           "id": "./retail.kirana/ind.blr/247@tourism-bpp-infra2.becknprotocol.io.item",
-          "selected": {
-            "quantity": {
+          "quantity": {
+            "selected": {
               "count": 2
             }
           }
@@ -36,7 +36,14 @@
       ],
       "fulfillments": [
         {
-          "id": "f1"
+          "id": "f1",
+          "stops": [
+            {
+              "location": {
+                "gps": "13.2008459,77.708736"
+              }
+            }
+          ]
         }
       ]
     }
