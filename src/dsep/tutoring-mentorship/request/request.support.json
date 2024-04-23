@@ -13,6 +13,8 @@
         "transaction_id": "bdb5ba09-2241-4f00-b434-73466cd06228"
     },
     "message": {
-        "ref_id": "3159f713-120e-4e7e-beae-6a638fb5df55"
+        "support": {
+            "order_id": "3159f713-120e-4e7e-beae-6a638fb5df55"
+        }
     }
 }
