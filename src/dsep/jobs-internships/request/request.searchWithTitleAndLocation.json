@@ -13,26 +13,20 @@
         "intent": {
             "item": {
                 "descriptor": {
-                    "name": "Developer"
-                },
-                "location_id": "1",
-                "fulfillment_id": "1",
-                "time": {
-                    "timestamp": "2022-10-11T09:55:41.161Z",
-                    "duration": ""
+                    "name": "Engineer"
                 }
             },
-            "fulfillment": {
-                "id": "1",
-                "type": "",
-                "start": {
-                    "location": {
-                        "id": "1",
+            "provider": {
+                "descriptor": {
+                    "name": "Affinidi"
+                },
+                "locations": [
+                    {
                         "city": {
-                            "name": "Delhi"
+                            "name": "Bangalore"
                         }
                     }
-                }
+                ]
             }
         }
     }
