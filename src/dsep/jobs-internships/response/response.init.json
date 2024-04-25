@@ -27,44 +27,46 @@
                 "fulfillments": [
                     {
                         "id": "1",
-                        "type": "remote",
-                        "tracking": false
+                        "type": "remote"
                     },
                     {
                         "id": "2",
-                        "type": "hybrid",
-                        "tracking": false
+                        "type": "hybrid"
                     },
                     {
                         "id": "3",
-                        "type": "Onsite",
-                        "tracking": false
+                        "type": "Onsite"
                     }
                 ],
                 "locations": [
                     {
-                        "id": "1",
+                        "id": "L1",
                         "city": {
-                            "name": "Bangalore"
+                            "name": "Pune",
+                            "code": "std:020"
+                        },
+                        "state": {
+                            "name": "Maharastra",
+                            "code": "MH"
                         }
                     }
                 ]
             },
             "items": [
                 {
-                    "id": "D7F8606A370DA9966DF15E62A81C374B",
+                    "id": "a23f2fdfbbb8ac402bf259d75402eb0792f50c095f7d08a55475e7af1c2dadca",
                     "descriptor": {
-                        "name": "Agile Project Manager",
+                        "name": "Fullstack Engineer",
                         "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
                     },
-                    "category_ids": ["1", "2"],
-                    "fulfillment_ids": ["1", "2", "3"],
-                    "location_ids": ["1"],
-                    "xinput": {
-                        "form": {
-                            "url": "https://6vs8xnx5i7.execute-api.ap-south-1.amazonaws.com/dsep/xinput/formid/D7F8606A370DA9966DF15E62A81C374B"
-                        }
-                    },
+                    "fulfillment_ids": [
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "location_ids": [
+                        "L1"
+                    ],
                     "time": {
                         "range": {
                             "start": "2023-01-03T13:23:01+00:00",
@@ -85,7 +87,6 @@
                                     "value": "Bachelors"
                                 },
                                 {
-                                    "descriptor": {},
                                     "value": "Bachelors or Equivalent Practical Experience"
                                 }
                             ],
@@ -111,7 +112,6 @@
                                     "value": "PhD"
                                 },
                                 {
-                                    "descriptor": {},
                                     "value": "Master's degree or PhD in Computer Science or related technical field."
                                 }
                             ],
@@ -124,17 +124,15 @@
                             "list": [
                                 {
                                     "descriptor": {
-                                        "name": "Software Development Experienceegree",
-                                        "code": "Software Development Experienceegree"
+                                        "name": "Software Development Experience",
+                                        "code": "Software Development Experience"
                                     },
                                     "value": "3 years"
                                 },
                                 {
-                                    "descriptor": {},
                                     "value": "2 years of Technical Leadership Experience"
                                 },
                                 {
-                                    "descriptor": {},
                                     "value": "3 years of experience working in a complex, matrixed organization"
                                 }
                             ],
@@ -178,13 +176,6 @@
                                         "code": "emp-duration-type"
                                     },
                                     "value": "FULL_TIME"
-                                },
-                                {
-                                    "descriptor": {
-                                        "name": "Employment Duration Type",
-                                        "code": "emp-duration-type"
-                                    },
-                                    "value": ""
                                 }
                             ],
                             "display": true
@@ -192,63 +183,41 @@
                         {
                             "descriptor": {
                                 "name": "skill requirement",
-                                "code": "Skills"
+                                "code": "req-skills"
                             },
                             "list": [
                                 {
-                                    "descriptor": {
-                                        "code": "You have 8+ years of engineering experience, predominantly in shipping user-facing production features"
-                                    }
+                                    "value": "You have 8+ years of engineering experience, predominantly in shipping user-facing production features"
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You are an expert in React.js and React Native, ideally using TypeScript language extensions  "
-                                    }
+                                    "value": "You are an expert in React.js and React Native, ideally using TypeScript language extensions  "
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You have a good understanding of JavaScript Design Patterns "
-                                    }
+                                    "value": "You have a good understanding of JavaScript Design Patterns "
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You have good experience writing front end test cases  "
-                                    }
+                                    "value": "You have good experience writing front end test cases  "
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You’re familiar with current trends and best practices in front-end architecture, including performance, security and usability.  "
-                                    }
+                                    "value": "You’re familiar with current trends and best practices in front-end architecture, including performance, security and usability.  "
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You’re familiar with product and design lifecycles, and collaborating closely with designers, engineers, and product managers "
-                                    }
+                                    "value": "You’re familiar with product and design lifecycles, and collaborating closely with designers, engineers, and product managers\u202f"
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You have experience with Test Driven Development and know when to apply it."
-                                    }
+                                    "value": "You have experience with Test Driven Development and know when to apply it."
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You have experience working on AWS or other cloud stacks and Docker.  "
-                                    }
+                                    "value": "You have experience working on AWS or other cloud stacks and Docker.  "
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You have experience building systems with high data protection requirements, anonymous data and data encryption. "
-                                    }
+                                    "value": "You have experience building systems with high data protection requirements, anonymous data and data encryption. "
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You have experience with IaaC. "
-                                    }
+                                    "value": "You have experience with IaaC. "
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "You have worked on building responsive UI using React Native. "
-                                    }
+                                    "value": "You have worked on building responsive UI using React Native."
                                 }
                             ],
                             "display": true
@@ -298,55 +267,89 @@
             "fulfillments": [
                 {
                     "id": "1",
-                    "tracking": false,
                     "customer": {
                         "person": {
-                            "url": "https://linkedin.com/john-doe",
-                            "name": "John Doe",
-                            "creds": [
+                            "name": "Sanjay",
+                            "gender": "Male",
+                            "age": "35",
+                            "skills": [
                                 {
-                                    "type": "application/vc+json",
-                                    "url": "https://cbse.nic.in/link/to/college-marksheet.json"
+                                    "name": "Android"
                                 },
                                 {
-                                    "type": "application/vc+json",
-                                    "url": "https://drive.google.com/link/to/pass-certificate.json"
-                                },
-                                {
-                                    "type": "application/vc+json",
-                                    "url": "https://digilocker.com/link/to/python-skill-certificate.json"
-                                },
-                                {
-                                    "type": "application/pdf",
-                                    "url": "https://drive.google.com/link/to/python-skill-certificate.pdf"
-                                },
-                                {
-                                    "type": "application/pdf",
-                                    "url": "https://drive.google.com/link/to/experience-certificate.pdf"
+                                    "name": "AWS"
                                 }
                             ],
                             "languages": [
                                 {
-                                    "code": "ENG"
+                                    "code": "en",
+                                    "name": "english"
                                 },
                                 {
-                                    "code": "HIN"
+                                    "code": "ml",
+                                    "name": "Malayalam"
+                                },
+                                {
+                                    "code": "hi",
+                                    "name": "Hindi"
                                 }
                             ],
-                            "skills": [
+                            "tags": [
                                 {
-                                    "name": "NodeJS"
+                                    "code": "current-experience",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "exp-years",
+                                                "name": "Experience"
+                                            },
+                                            "value": "P4Y2M"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "current-company",
+                                                "name": "Current Company"
+                                            },
+                                            "value": "ABC tech"
+                                        }
+                                    ]
                                 },
                                 {
-                                    "name": "React"
+                                    "code": "salary-details",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "expected-salary",
+                                                "name": "Expected Salary"
+                                            },
+                                            "value": "80000"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "current-salary",
+                                                "name": "Current Salary"
+                                            },
+                                            "value": "50000"
+                                        }
+                                    ]
                                 },
                                 {
-                                    "name": "Project Management"
-                                },
-                                {
-                                    "name": "Enterprise Architecture"
+                                    "code": "documents",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "resume",
+                                                "name": "resume"
+                                            },
+                                            "value": "https://link-to-the-document.com"
+                                        }
+                                    ]
                                 }
                             ]
+                        },
+                        "contact": {
+                            "phone": "9999999999999",
+                            "email": "abc@abc.bc"
                         }
                     }
                 }

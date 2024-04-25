@@ -18,7 +18,7 @@
             },
             "items": [
                 {
-                    "id": "D7F8606A370DA9966DF15E62A81C374B"
+                    "id": "a23f2fdfbbb8ac402bf259d75402eb0792f50c095f7d08a55475e7af1c2dadca"
                 }
             ],
             "fulfillments": [
@@ -26,65 +26,91 @@
                     "id": "1",
                     "customer": {
                         "person": {
-                            "name": "John Doe",
-                            "languages": [
-                                {
-                                    "code": "ENG"
-                                },
-                                {
-                                    "code": "HIN"
-                                }
-                            ],
-                            "url": "https://linkedin.com/john-doe",
-                            "creds": [
-                                {
-                                    "url": "https://cbse.nic.in/link/to/college-marksheet.json",
-                                    "type": "application/vc+json"
-                                },
-                                {
-                                    "url": "https://drive.google.com/link/to/pass-certificate.json",
-                                    "type": "application/vc+json"
-                                },
-                                {
-                                    "url": "https://digilocker.com/link/to/python-skill-certificate.json",
-                                    "type": "application/vc+json"
-                                },
-                                {
-                                    "url": "https://drive.google.com/link/to/python-skill-certificate.pdf",
-                                    "type": "application/pdf"
-                                },
-                                {
-                                    "url": "https://drive.google.com/link/to/experience-certificate.pdf",
-                                    "type": "application/pdf"
-                                }
-                            ],
+                            "name": "Sanjay",
+                            "gender": "Male",
+                            "age": "35",
                             "skills": [
                                 {
-                                    "name": "NodeJS"
+                                    "name": "Android"
                                 },
                                 {
-                                    "name": "React"
+                                    "name": "AWS"
+                                }
+                            ],
+                            "languages": [
+                                {
+                                    "code": "en",
+                                    "name": "english"
                                 },
                                 {
-                                    "name": "Project Management"
+                                    "code": "ml",
+                                    "name": "Malayalam"
                                 },
                                 {
-                                    "name": "Enterprise Architecture"
+                                    "code": "hi",
+                                    "name": "Hindi"
+                                }
+                            ],
+                            "tags": [
+                                {
+                                    "code": "current-experience",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "exp-years",
+                                                "name": "Experience"
+                                            },
+                                            "value": "P4Y2M"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "current-company",
+                                                "name": "Current Company"
+                                            },
+                                            "value": "ABC tech"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "salary-details",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "expected-salary",
+                                                "name": "Expected Salary"
+                                            },
+                                            "value": "80000"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "current-salary",
+                                                "name": "Current Salary"
+                                            },
+                                            "value": "50000"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "documents",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "resume",
+                                                "name": "resume"
+                                            },
+                                            "value": "https://link-to-the-document.com"
+                                        }
+                                    ]
                                 }
                             ]
+                        },
+                        "contact": {
+                            "phone": "9999999999999",
+                            "email": "abc@abc.bc"
                         }
                     }
                 }
-            ],
-            "xinput": {
-                "data": {
-                    "resume": "data:application/pdf;base64,JVBERi0xLjUKJd...c3RyZWFtCnjarVhLc9s2...",
-                    "work-mode": "hybrid",
-                    "exp-years": "10",
-                    "sop": "I am interested in this job because my prior experience is highly relevant to this role."
-                },
-                "submission_id": 12345
-            }
+            ]
         }
     }
 }

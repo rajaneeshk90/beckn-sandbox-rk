@@ -19,18 +19,101 @@
         "timestamp": "2023-02-23T08:09:02.172Z"
     },
     "message": {
-        "update_target": "order.fulfillments[0].customer.person.name",
         "order": {
+            "id": "1677140405881",
             "fulfillments": [
                 {
                     "customer": {
                         "person": {
-                            "name": "James Smith"
+                            "name": "Sanjay",
+                            "gender": "Male",
+                            "age": "35",
+                            "skills": [
+                                {
+                                    "name": "Android"
+                                },
+                                {
+                                    "name": "AWS"
+                                },
+                                {
+                                    "name": "JAVA"
+                                }
+                            ],
+                            "languages": [
+                                {
+                                    "code": "en",
+                                    "name": "english"
+                                },
+                                {
+                                    "code": "ml",
+                                    "name": "Malayalam"
+                                },
+                                {
+                                    "code": "hi",
+                                    "name": "Hindi"
+                                }
+                            ],
+                            "tags": [
+                                {
+                                    "code": "current-experience",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "exp-years",
+                                                "name": "Experience"
+                                            },
+                                            "value": "P4Y2M"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "current-company",
+                                                "name": "Current Company"
+                                            },
+                                            "value": "ABC tech"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "salary-details",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "expected-salary",
+                                                "name": "Expected Salary"
+                                            },
+                                            "value": "80000"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "current-salary",
+                                                "name": "Current Salary"
+                                            },
+                                            "value": "50000"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "documents",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "resume",
+                                                "name": "resume"
+                                            },
+                                            "value": "https://link-to-the-document.com"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "contact": {
+                            "phone": "9999999999999",
+                            "email": "abc@abc.bc"
                         }
                     }
                 }
-            ],
-            "id": "a9aaecca-10b7-4d19-b640-b047a7c621961676906777032"
-        }
+            ]
+        },
+        "update_target": "order.fulfillments[0].customer"
     }
 }
