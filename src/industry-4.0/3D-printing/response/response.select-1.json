@@ -24,7 +24,7 @@
                 "descriptor": {
                     "images": [
                         {
-                            "url": "https://makerspace/3d/makerspace_logo.png",
+                            "url": "makerspace_logo.png",
                             "size_type": "sm"
                         }
                     ],
@@ -45,7 +45,9 @@
                         ],
                         "name": "SLA 3D Printing"
                     },
-                    "category_ids": ["p1c1"],
+                    "category_ids": [
+                        "p1c1"
+                    ],
                     "tags": [
                         {
                             "descriptor": {
@@ -155,7 +157,9 @@
                                 "cur": 0,
                                 "max": 0
                             },
-                            "headings": ["Configuration Details"]
+                            "headings": [
+                                "Configuration Details"
+                            ]
                         },
                         "form": {
                             "mime_type": "text/html",

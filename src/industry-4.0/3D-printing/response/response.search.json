@@ -28,7 +28,7 @@
                     "descriptor": {
                         "images": [
                             {
-                                "url": "https://makerspace/3d/SLAtype.img",
+                                "url": "makerspace_logo.png",
                                 "size_type": "sm"
                             }
                         ],
@@ -99,8 +99,13 @@
                                 ],
                                 "name": "SLA 3D Printing"
                             },
-                            "category_ids": ["p1c1"],
-                            "fulfillment_ids": ["f1", "f2"],
+                            "category_ids": [
+                                "p1c1"
+                            ],
+                            "fulfillment_ids": [
+                                "f1",
+                                "f2"
+                            ],
                             "tags": [
                                 {
                                     "descriptor": {
@@ -215,8 +220,12 @@
                                 ],
                                 "name": "SLS 3D printing"
                             },
-                            "category_ids": ["c2"],
-                            "fulfillment_ids": ["f1"],
+                            "category_ids": [
+                                "c2"
+                            ],
+                            "fulfillment_ids": [
+                                "f1"
+                            ],
                             "tags": [
                                 {
                                     "descriptor": {
