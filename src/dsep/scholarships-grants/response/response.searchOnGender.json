@@ -31,75 +31,212 @@
                 {
                     "id": "BX213573733",
                     "descriptor": {
-                        "name": "Navjyoti Education Trust"
+                        "name": "XYZ Education Foundation",
+                        "short_desc": "Short Description about the Foundation",
+                        "images": [
+                            {
+                                "url": "url of the image of the provider"
+                            }
+                        ]
                     },
+                    "locations": [
+                        {
+                            "id": "L1",
+                            "city": {
+                                "name": "Pune",
+                                "code": "std:020"
+                            },
+                            "state": {
+                                "name": "Maharastra",
+                                "code": "MH"
+                            }
+                        },
+                        {
+                            "id": "L2",
+                            "city": {
+                                "name": "Thane",
+                                "code": "std:022"
+                            },
+                            "state": {
+                                "name": "Maharastra",
+                                "code": "MH"
+                            }
+                        },
+                        {
+                            "id": "L3",
+                            "city": {
+                                "name": "Lucknow",
+                                "code": "std:0522"
+                            },
+                            "state": {
+                                "name": "Uttar Pradesh",
+                                "code": "UP"
+                            }
+                        }
+                    ],
                     "categories": [
                         {
-                            "id": "DSEP_CAT_2",
+                            "id": "DSEP_CAT_1",
                             "descriptor": {
-                                "code": "pg",
-                                "name": "Post Graduate"
+                                "code": "ug",
+                                "name": "Under Graduate"
                             }
                         }
                     ],
                     "fulfillments": [
                         {
-                            "id": "DSEP_FUL_31095975",
+                            "id": "DSEP_FUL_63587501",
                             "type": "SCHOLARSHIP",
                             "tracking": false,
                             "contact": {
                                 "phone": "9876543210",
                                 "email": "maryg@xyz.com"
-                            },
-                            "stops": [
-                                {
-                                    "type": "APPLICATION-START",
-                                    "time": {
-                                        "timestamp": "2022-10-01T00:00:00.000Z"
-                                    }
-                                },
-                                {
-                                    "type": "APPLICATION-END",
-                                    "time": {
-                                        "timestamp": "2022-10-31T00:00:00.000Z"
-                                    }
-                                }
-                            ]
+                            }
                         }
                     ],
                     "items": [
                         {
-                            "id": "SCM_31095975",
+                            "id": "SCM_63587501",
                             "descriptor": {
-                                "name": "Agile Excellence Scholarship",
-                                "long_desc": "Empowering aspiring leaders with financial support for Agile Scrum Master certification, fostering organizational agility and effective team leadership."
+                                "name": "XYZ Education Scholarship for Undergraduate Students",
+                                "long_desc": "XYZ Education Scholarship for Undergraduate Students"
                             },
                             "price": {
                                 "currency": "INR",
-                                "value": "45000"
+                                "value": "Upto RS.1000 per year"
+                            },
+                            "time": {
+                                "label": "Start  & End date of the Application",
+                                "range": {
+                                    "start": "2022-09-01T00:00:00.000Z",
+                                    "end": "2022-10-31T00:00:00.000Z"
+                                }
                             },
                             "rateable": false,
                             "tags": [
                                 {
                                     "display": true,
                                     "descriptor": {
-                                        "code": "benefits",
-                                        "name": "Benefits"
+                                        "code": "soc-elg",
+                                        "name": "Social Eligibility"
+                                    },
+                                    "list": [
+                                        {
+                                            "value": "SC"
+                                        },
+                                        {
+                                            "value": "ST"
+                                        },
+                                        {
+                                            "value": "OBC"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "display": true,
+                                    "descriptor": {
+                                        "code": "gen-elg",
+                                        "name": "Gender Eligibility"
+                                    },
+                                    "list": [
+                                        {
+                                            "value": "Female"
+                                        },
+                                        {
+                                            "value": "Transgender"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "display": true,
+                                    "descriptor": {
+                                        "code": "fin-elg",
+                                        "name": "Financial Eligibility"
+                                    },
+                                    "list": [
+                                        {
+                                            "value": "Max Family Income - Rs.500000.00"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "display": true,
+                                    "descriptor": {
+                                        "code": "acad-elg",
+                                        "name": "Academic Eligibility"
                                     },
                                     "list": [
                                         {
                                             "descriptor": {
-                                                "code": "scholarship-amount",
-                                                "name": "Scholarship Amount"
+                                                "code": "class",
+                                                "name": "Class"
                                             },
-                                            "value": "Upto Rs.45000 per year",
-                                            "display": true
+                                            "value": "12th"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "percentage",
+                                                "name": "Percentage"
+                                            },
+                                            "value": ">= 50"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "display": true,
+                                    "descriptor": {
+                                        "code": "docs-reqd",
+                                        "name": "Documents Required"
+                                    },
+                                    "list": [
+                                        {
+                                            "value": "10th Marksheet"
+                                        },
+                                        {
+                                            "value": "Aadhar Card of the Student"
+                                        },
+                                        {
+                                            "value": "Aadhar Card of the Parent"
+                                        },
+                                        {
+                                            "value": "Pan Card of the Parent"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "display": true,
+                                    "descriptor": {
+                                        "code": "add-info",
+                                        "name": "Additional Information"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "faq-url",
+                                                "name": "Frequently Asked Questions's URL"
+                                            },
+                                            "value": "https://www.xyz-scholarship.com/faq"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "tnc-url",
+                                                "name": "Terms and Conditions's URL"
+                                            },
+                                            "value": "https://www.xyz-scholarship.com/tnc"
                                         }
                                     ]
                                 }
                             ],
-                            "category_ids": ["DSEP_CAT_2"],
-                            "fulfillment_ids": ["DSEP_FUL_31095975"]
+                            "category_ids": [
+                                "DSEP_CAT_1"
+                            ],
+                            "fulfillment_ids": [
+                                "DSEP_FUL_63587501"
+                            ],
+                            "location_ids": [
+                                "L1",
+                                "L2"
+                            ]
                         }
                     ],
                     "rateable": false
