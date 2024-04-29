@@ -11,16 +11,16 @@
                 "code": "IND"
             }
         },
-        "action": "on_update",
-        "timestamp": "2023-02-22T12:53:58.965Z",
+        "action": "on_status",
+        "timestamp": "2023-08-02T09:27:53.607Z",
         "ttl": "PT10M",
         "version": "1.1.0",
         "bap_id": "ps-bap-network.becknprotocol.io",
         "bap_uri": "https://ps-bap-network.becknprotocol.io/",
         "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
         "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
-        "transaction_id": "edea17fa-b5c4-48c9-86dd-1b80dda67d37",
-        "message_id": "19e94a11-cb13-4762-bfc1-11e782a45c76"
+        "transaction_id": "5007a4bd-f8c1-4859-877e-2bc4b7a4f554",
+        "message_id": "5c59bdc4-a2c7-4742-81de-149f91c2b2df"
     },
     "message": {
         "order": {
@@ -29,10 +29,10 @@
                 "id": "471",
                 "descriptor": {
                     "name": "XYZ Education Foundation",
-                    "short_desc" : "Short Description about the Foundation",
+                    "short_desc": "Short Description about the Foundation",
                     "images": [
                         {
-                            "url" : "url of the image of the provider"
+                            "url": "url of the image of the provider"
                         }
                     ]
                 },
@@ -49,11 +49,11 @@
                         "currency": "INR",
                         "value": "Upto RS.1000 per year"
                     },
-                    "time" : {
-                        "label" : "Start  & End date of the Application",
-                        "range" : {
-                            "start" : "2022-09-01T00:00:00.000Z",
-                            "end" : "2022-10-31T00:00:00.000Z"
+                    "time": {
+                        "label": "Start  & End date of the Application",
+                        "range": {
+                            "start": "2022-09-01T00:00:00.000Z",
+                            "end": "2022-10-31T00:00:00.000Z"
                         }
                     },
                     "rateable": false,
@@ -66,14 +66,15 @@
                             },
                             "list": [
                                 {
-                                    "value" : "SC"
+                                    "value": "SC"
                                 },
                                 {
-                                    "value" : "ST"
+                                    "value": "ST"
                                 },
                                 {
-                                    "value" : "OBC"
-                                }]
+                                    "value": "OBC"
+                                }
+                            ]
                         },
                         {
                             "display": true,
@@ -83,11 +84,12 @@
                             },
                             "list": [
                                 {
-                                    "value" : "Female"
+                                    "value": "Female"
                                 },
                                 {
-                                    "value" : "Transgender"
-                                }]
+                                    "value": "Transgender"
+                                }
+                            ]
                         },
                         {
                             "display": true,
@@ -97,9 +99,9 @@
                             },
                             "list": [
                                 {
-                                    "value" : "Max Family Income - Rs.500000.00"
-                                }] 
-                            
+                                    "value": "Max Family Income - Rs.500000.00"
+                                }
+                            ]
                         },
                         {
                             "display": true,
@@ -122,9 +124,7 @@
                                     },
                                     "value": ">= 50"
                                 }
-
-                            ] 
-                            
+                            ]
                         },
                         {
                             "display": true,
@@ -134,16 +134,16 @@
                             },
                             "list": [
                                 {
-                                    "value" : "10th Marksheet"
+                                    "value": "10th Marksheet"
                                 },
                                 {
-                                    "value" : "Aadhar Card of the Student"
+                                    "value": "Aadhar Card of the Student"
                                 },
                                 {
-                                    "value" : "Aadhar Card of the Parent"
+                                    "value": "Aadhar Card of the Parent"
                                 },
                                 {
-                                    "value" : "Pan Card of the Parent"
+                                    "value": "Pan Card of the Parent"
                                 }
                             ]
                         },
@@ -159,7 +159,7 @@
                                         "code": "faq-url",
                                         "name": "Frequently Asked Questions's URL"
                                     },
-                                    "value" : "https://www.xyz-scholarship.com/faq" 
+                                    "value": "https://www.xyz-scholarship.com/faq"
                                 },
                                 {
                                     "descriptor": {
@@ -171,7 +171,10 @@
                             ]
                         }
                     ],
-                    "location_ids": ["L1","L2"],
+                    "location_ids": [
+                        "L1",
+                        "L2"
+                    ],
                     "fulfillment_ids": [
                         "VSP_FUL_1113"
                     ]
@@ -194,22 +197,23 @@
             },
             "fulfillments": [
                 {
-                    "state" : {
-                        "descriptor" : {
-                            "code": "BANK-ACCOUNT-UPDATED",
-                            "name" : "Bank details updated"
+                    "state": {
+                        "descriptor": {
+                            "code": "SCHOLARSHIP-REJECTED",
+                            "name": "Application Rejected",
+                            "short_desc": "Application is rejected due to inappropriate Informaion"
                         },
-                        "updated_at" : "2023-02-06T09:55:41.161Z"
+                        "updated_at": "2023-02-06T09:55:41.161Z"
                     },
                     "id": "VSP_FUL_1113",
                     "type": "SCHOLARSHIP",
                     "tracking": false,
-                    "agent" : {
-                        "person" : {
-                            "name" : "Ekstep Foundation SPoc"
+                    "agent": {
+                        "person": {
+                            "name": "Ekstep Foundation SPoc"
                         },
-                        "contact" : {
-                            "email" : "ekstepsupport@ekstep.com"
+                        "contact": {
+                            "email": "ekstepsupport@ekstep.com"
                         }
                     },
                     "customer": {
@@ -226,62 +230,60 @@
                     }
                 }
             ],
-            "cancellation_terms" : [
+            "cancellation_terms": [
                 {
-                    "cancellation_fee" : {
-                        "amount" : {
-                            "currency" : "INR",
-                            "value" : "Penalty upto 5,00,000 INR"
+                    "cancellation_fee": {
+                        "amount": {
+                            "currency": "INR",
+                            "value": "Penalty upto 5,00,000 INR"
                         }
                     }
                 }
-
             ],
             "docs": [
                 {
-                    "descriptor":{
-                        "name" :"Application Details",
-                        "short_desc" : "To open this document, enter the password sent to your email mayan****@***.com"
+                    "descriptor": {
+                        "name": "Application Details",
+                        "short_desc": "To open this document, enter the password sent to your email mayan****@***.com"
                     },
-                    "url" : "https://link-to-the-document.com",
-                    "mime_type" : "application/pdf"
+                    "url": "https://link-to-the-document.com",
+                    "mime_type": "application/pdf"
                 }
             ],
-            "payments" : [
+            "payments": [
                 {
-                    "params" :{
+                    "params": {
                         "bank_code": "IFSC_Code_Of_the_bank",
-                        "bank_account_number" :"121212121212",
-                        "bank_account_name" : "Account Holder Name"
+                        "bank_account_number": "121212121212",
+                        "bank_account_name": "Account Holder Name"
                     }
-                   
                 }
             ],
-            "quote" :{
-                "price" : {
-                    "currency" : "INR",
-                    "value" : "250000"
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "250000"
                 },
-                "breakup":[
+                "breakup": [
                     {
                         "title": "Tution fee",
-                        "price" : {
-                            "currency" : "INR",
-                            "value" : "150000"
+                        "price": {
+                            "currency": "INR",
+                            "value": "150000"
                         }
                     },
                     {
                         "title": "Hostel fee",
-                        "price" : {
-                            "currency" : "INR",
-                            "value" : "50000"
+                        "price": {
+                            "currency": "INR",
+                            "value": "50000"
                         }
                     },
                     {
                         "title": "Books",
-                        "price" : {
-                            "currency" : "INR",
-                            "value" : "50000"
+                        "price": {
+                            "currency": "INR",
+                            "value": "50000"
                         }
                     }
                 ]

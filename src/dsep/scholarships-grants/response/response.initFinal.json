@@ -11,20 +11,19 @@
                 "code": "IND"
             }
         },
-        "action": "on_update",
-        "timestamp": "2023-02-22T12:53:58.965Z",
+        "action": "on_init",
+        "timestamp": "2023-08-02T09:16:11.982Z",
         "ttl": "PT10M",
         "version": "1.1.0",
         "bap_id": "ps-bap-network.becknprotocol.io",
         "bap_uri": "https://ps-bap-network.becknprotocol.io/",
         "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
         "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
-        "transaction_id": "edea17fa-b5c4-48c9-86dd-1b80dda67d37",
-        "message_id": "19e94a11-cb13-4762-bfc1-11e782a45c76"
+        "transaction_id": "a9aaecca-10b7-4d19-b640-022723112309",
+        "message_id": "10c3db77-0c57-4bf8-b9af-169ee5b2d42a"
     },
     "message": {
         "order": {
-            "id": "12424kh",
             "provider": {
                 "id": "471",
                 "descriptor": {
@@ -196,8 +195,8 @@
                 {
                     "state" : {
                         "descriptor" : {
-                            "code": "BANK-ACCOUNT-UPDATED",
-                            "name" : "Bank details updated"
+                            "code": "APPLICATION-COMPLETED",
+                            "name" : "Application Completed"
                         },
                         "updated_at" : "2023-02-06T09:55:41.161Z"
                     },
@@ -237,16 +236,6 @@
                 }
 
             ],
-            "docs": [
-                {
-                    "descriptor":{
-                        "name" :"Application Details",
-                        "short_desc" : "To open this document, enter the password sent to your email mayan****@***.com"
-                    },
-                    "url" : "https://link-to-the-document.com",
-                    "mime_type" : "application/pdf"
-                }
-            ],
             "payments" : [
                 {
                     "params" :{
@@ -285,7 +274,7 @@
                         }
                     }
                 ]
-            }
+            } 
         }
     }
 }
