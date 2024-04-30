@@ -118,7 +118,7 @@
                             "stops": [
                                 {
                                     "location": {
-                                        "gps": "12.9164682,77.6089985",
+                                        "gps": "12.9716° N, 77.5946° E",
                                         "address": "Akashya nagar B17/14",
                                         "state": {
                                             "name": "Madhya Pradesh"
@@ -190,7 +190,7 @@
                             "stops": [
                                 {
                                     "location": {
-                                        "gps": "12.9164682,77.6089985",
+                                        "gps": "12.9716° N, 77.5946° E",
                                         "address": "Akashya nagar B17/14",
                                         "state": {
                                             "name": "Madhya Pradesh"
@@ -217,8 +217,12 @@
                                 "value": "300",
                                 "currency": "INR"
                             },
-                            "category_ids": ["cat-02"],
-                            "fulfillment_ids": ["ful-01"],
+                            "category_ids": [
+                                "cat-02"
+                            ],
+                            "fulfillment_ids": [
+                                "ful-01"
+                            ],
                             "time": {
                                 "duration": "PT30M"
                             }
@@ -235,8 +239,12 @@
                                 "value": "400",
                                 "currency": "INR"
                             },
-                            "category_ids": ["cat-02"],
-                            "fulfillment_ids": ["ful-02"],
+                            "category_ids": [
+                                "cat-02"
+                            ],
+                            "fulfillment_ids": [
+                                "ful-02"
+                            ],
                             "time": {
                                 "duration": "PT30M"
                             }

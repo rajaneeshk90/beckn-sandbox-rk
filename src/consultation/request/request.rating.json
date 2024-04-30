@@ -19,10 +19,12 @@
         "timestamp": "2023-07-16T04:41:16Z"
     },
     "message": {
-        "rating": {
-            "rating_category": "Agent",
-            "id": "FULAGE123",
-            "value": "5"
-        }
+        "ratings": [
+            {
+                "rating_category": "Agent",
+                "id": "FULAGE123",
+                "value": "5"
+            }
+        ]
     }
 }

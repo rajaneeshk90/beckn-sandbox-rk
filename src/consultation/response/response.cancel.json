@@ -46,8 +46,12 @@
                         "value": "300",
                         "currency": "INR"
                     },
-                    "category_ids": ["cat-02"],
-                    "fulfillment_ids": ["ful-01"],
+                    "category_ids": [
+                        "cat-02"
+                    ],
+                    "fulfillment_ids": [
+                        "ful-01"
+                    ],
                     "time": {
                         "duration": "PT30M"
                     }
@@ -85,7 +89,7 @@
                     "stops": [
                         {
                             "location": {
-                                "gps": "12.9164682,77.6089985",
+                                "gps": "12.9716° N, 77.5946° E",
                                 "address": "Akashya nagar B17/14",
                                 "state": {
                                     "name": "Madhya Pradesh"
@@ -146,13 +150,13 @@
                     "params": {
                         "amount": "350",
                         "currency": "INR",
+                        "transaction_id": "a35b56cf-e5cf-41f1-9b5d-fa99d8d5ac8c",
                         "bank_account_number": "1234002341",
                         "bank_code": "INB0004321",
                         "bank_account_name": "Strapi BPP Limited"
                     },
                     "status": "PAID",
-                    "type": "PRE-ORDER",
-                    "transaction_id": "a35b56cf-e5cf-41f1-9b5d-fa99d8d5ac8c"
+                    "type": "PRE-ORDER"
                 }
             ],
             "cancellation_terms": [
