@@ -144,5 +144,8 @@
         }
       ]
     }
+<<<<<<< HEAD
   }
+=======
+>>>>>>> ba58013 (changes in the sandbox and postman collection of the doctor consultastion use case of DHP)
 }

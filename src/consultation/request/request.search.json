@@ -19,20 +19,33 @@
     "message": {
         "intent": {
             "category": {
-                "code": "cardiology"
-            },
-            "location": {
-                "gps": "12.423423,77.325647",
-                "radius": {
-                    "type": "CONSTANT",
-                    "value": "5",
-                    "unit": "km"
+                "descriptor": {
+                    "code": "cardiology"
                 }
+            },
+            "fulfillment": {
+                "stops": [
+                    {
+                        "location": {
+                            "circle": {
+                                "gps": "12.423423,77.325647",
+                                "radius": {
+                                    "type": "CONSTANT",
+                                    "value": "5",
+                                    "unit": "km"
+                                }
+                            }
+                        }
+                    }
+                ]
             },
             "item": {
                 "descriptor": {
-                    "code": "medical-consultation"
+                    "name": "Orthopedaedic Surgeon"
                 }
+            },
+            "provider": {
+                "id": "289edce4-d002-4962-b311-4c025e22b4f6"
             }
         }
     }

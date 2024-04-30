@@ -20,9 +20,14 @@
     },
     "message": {
         "support": {
+<<<<<<< HEAD
             "order_id": "759b905c-5a30-4d18-a6af-0decbac9282f",
             "phone": "+919876543210",
             "email": "john.doe@gmail.com"
+=======
+            "ref_id": "759b905c-5a30-4d18-a6af-0decbac9282f",
+            "callback_phone": "+91-8858150053"
+>>>>>>> ba58013 (changes in the sandbox and postman collection of the doctor consultastion use case of DHP)
         }
     }
 }

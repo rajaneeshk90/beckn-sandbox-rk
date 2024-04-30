@@ -19,15 +19,25 @@
         "timestamp": "2023-07-16T04:41:16Z"
     },
     "message": {
-        "update_target": "order.billing",
         "order": {
             "id": "759b905c-5a30-4d18-a6af-0decbac9282f",
-            "billing": {
-                "name": "John Doe",
-                "address": "Villa 5, Green Valley, Malleshwaram, 560012",
-                "email": "john.doe@example.com",
-                "phone": "+91-9999999999"
-            }
-        }
+            "fulfillments": [
+                {
+                    "customer": {
+                        "person": {
+                            "name": "Jane Doe",
+                            "age": "13",
+                            "gender": "female",
+                            "dob": "1995-09-11"
+                        },
+                        "contact": {
+                            "phone": "+91-9663088848",
+                            "email": "jane.doe@example.com"
+                        }
+                    }
+                }
+            ]
+        },
+        "update_target": "order.fulfillments[0].customer"
     }
 }

@@ -21,8 +21,14 @@
     "message": {
         "ratings": [
             {
+<<<<<<< HEAD
                 "id": "a9aaecca-10b7-4d19-b640-b047a7c621961676906777032",
                 "rating_category": "Item"
+=======
+                "rating_category": "Agent",
+                "id": "FULAGE123",
+                "value": "5"
+>>>>>>> ba58013 (changes in the sandbox and postman collection of the doctor consultastion use case of DHP)
             }
         ]
     }
