@@ -4,11 +4,12 @@
         "action": "update",
         "location": {
             "country": {
-                "name": "India",
                 "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
             }
         },
-        "city": "std:080",
         "version": "1.1.0",
         "bap_id": "ps-bap-network.becknprotocol.io",
         "bap_uri": "https://ps-bap-network.becknprotocol.io/",
@@ -21,11 +22,11 @@
     "message": {
         "update_target": "order.billing",
         "order": {
-            "id": "759b905c-5a30-4d18-a6af-0decbac9282f",
+            "id": "be69bb43-8286-48b4-801f-a8c5b41ad450",
             "billing": {
-                "name": "John Doe",
+                "name": "Rajesh Kumar",
                 "address": "Villa 5, Green Valley, Malleshwaram, 560012",
-                "email": "john.doe@example.com",
+                "email": "rajesh.kumar@example.com",
                 "phone": "+91-9999999999"
             }
         }

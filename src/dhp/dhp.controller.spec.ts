@@ -53,14 +53,14 @@ import * as ConsultationSearchResponseJSON from "../consultation/response/respon
 import * as ConsultationSelectRequestJSON from "../consultation/request/request.select.json";
 import * as ConsultationSelectResponseJSON from "../consultation/response/response.select.json";
 import * as ConsultationInitRequestJSON from "../consultation/request/request.init.json";
-import * as ConsultationInitResponseJSON from "../consultation/response/response.init.json";
+import * as ConsultationInitResponseJSON from "../consultation/response/response.init1.json";
 import * as ConsultationConfirmRequestJSON from "../consultation/request/request.confirm.json";
 import * as ConsultationConfirmResponseJSON from "../consultation/response/response.confirm.json";
 import * as ConsultationStatusRequestJSON from "../consultation/request/request.status.json";
 import * as ConsultationStatusResponseJSON from "../consultation/response/response.status.json";
 import * as ConsultationCancelRequestJSON from "../consultation/request/request.cancel.json";
 import * as ConsultationCancelResponseJSON from "../consultation/response/response.cancel.json";
-import * as ConsultationUpdateRequestJSON from "../consultation/request/request.update.json";
+import * as ConsultationUpdateRequestJSON from "../consultation/request/request.update.booking.slot.json";
 import * as ConsultationUpdateResponseJSON from "../consultation/response/response.update.json";
 import * as ConsultationTrackRequestJSON from "../consultation/request/request.track.json";
 import * as ConsultationTrackResponseJSON from "../consultation/response/response.track.json";
