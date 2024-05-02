@@ -11,6 +11,4 @@ export interface DHPApiInterface {
     update: (dHPRequestDto: DHPRequestDto) => any;
     rating: (dHPRequestDto: DHPRequestDto) => any;
     support: (dHPRequestDto: DHPRequestDto) => any;
-    cancellationReasons: (dHPRequestDto: DHPRequestDto) => any;
-    ratingCategories: (dHPRequestDto: DHPRequestDto) => any;
 }

@@ -4,11 +4,12 @@
         "action": "confirm",
         "location": {
             "country": {
-                "name": "India",
                 "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
             }
         },
-        "city": "std:080",
         "version": "1.1.0",
         "bap_id": "ps-bap-network.becknprotocol.io",
         "bap_uri": "https://ps-bap-network.becknprotocol.io/",
@@ -25,13 +26,7 @@
             },
             "items": [
                 {
-                    "id": "cons-01",
-                    "xinput": {
-                        "form_response": {
-                            "status": true,
-                            "submission_id": "c844d5f4-29c3-4398-b594-8b4716ef5dbf"
-                        }
-                    }
+                    "id": "lab-test-01"
                 }
             ],
             "billing": {
@@ -49,16 +44,23 @@
                             "age": "26",
                             "gender": "M",
                             "dob": "1995-09-11"
+                        },
+                        "contact": {
+                            "phone": "+91-9999999999",
+                            "email": "rajesh.kumar@example.com"
                         }
                     }
                 }
             ],
             "payments": [
                 {
-                    "type": "ON-FULFILLMENT",
-                    "status": "NOT-PAID",
+                    "type": "PRE-FULFILLMENT",
+                    "url": "payto://ban/98273982749428?amount=INR:3030&ifsc=SBIN0000575&message=payment",
+                    "collected_by": "BPP",
+                    "status": "PAID",
                     "params": {
-                        "amount": "350",
+                        "transaction_id": "ABCD2414143231",
+                        "amount": "3030",
                         "currency": "INR"
                     }
                 }

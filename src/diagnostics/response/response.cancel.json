@@ -4,11 +4,12 @@
     "action": "on_cancel",
     "location": {
       "country": {
-        "name": "India",
         "code": "IND"
+      },
+      "city": {
+        "code": "std:080"
       }
     },
-    "city": "std:080",
     "version": "1.1.0",
     "bap_id": "ps-bap-network.becknprotocol.io",
     "bap_url": "https://ps-bap-client.becknprotocol.io/",
@@ -26,16 +27,28 @@
         "descriptor": {
           "name": "GioLabs Pvt Ltd",
           "short_desc": "X-rays, tests and more",
+          "long_desc": "Advanced diagnostics & precise testing at XYZ Pathology Lab. Fast, accurate results for informed healthcare decisions.",
           "images": [
             {
               "url": "https://giolabs.in/images/logo.png"
             }
+          ],
+          "media": [
+            {
+              "mimetype": "application/pdf",
+              "url": "https://www.aiims.com/honours/237402938409485039850935"
+            },
+            {
+              "mimetype": "application/pdf",
+              "url": "https://www.aiims.com/honours/2374029384094850394240935"
+            }
           ]
-        }
+        },
+        "rating": "4.5"
       },
       "items": [
         {
-          "id": "cardiology-01",
+          "id": "lab-test-01",
           "descriptor": {
             "code": "ecg",
             "name": "Electrocardiogram test"
@@ -44,57 +57,72 @@
             "value": "3000",
             "currency": "INR"
           },
+          "category_ids": [
+            "cat-01"
+          ],
           "fulfillment_ids": [
-            "ful-01"
+            "ful-01",
+            "ful-02"
           ]
         }
       ],
       "fulfillments": [
         {
           "id": "ful-01",
-          "type": "OPD",
+          "type": "walk-in",
+          "stops": [
+            {
+              "type": "end",
+              "time": {
+                "range": {
+                  "start": "0000-00-00T10:00:00Z",
+                  "end": "0000-00-00T18:00:00Z"
+                },
+                "days": "1,2,3,4,5,6,7",
+                "schedule": {
+                  "holidays": [
+                    "2024-12-10",
+                    "2024-12-11",
+                    "2024-12-12"
+                  ]
+                }
+              },
+              "location": {
+                "gps": "12.9716° N, 77.5946° E",
+                "address": "Akashya nagar B17/14",
+                "state": {
+                  "name": "Madhya Pradesh"
+                },
+                "city": {
+                  "name": "Bhopal"
+                },
+                "area_code": "462001"
+              }
+            }
+          ],
           "customer": {
             "person": {
               "name": "Rajesh Kumar",
               "age": "26",
               "gender": "M",
               "dob": "1995-09-11"
+            },
+            "contact": {
+              "phone": "+91-9999999999",
+              "email": "rajesh.kumar@example.com"
             }
           },
           "agent": {
             "person": {
               "id": "237402938409485039850935",
-              "name": "Dr Asthana",
-              "gender": "male",
-              "creds": [
-                {
-                  "id": "237402938409485039850935",
-                  "type": "VerifiableCredential",
-                  "url": "https://www.aiims.com/honours/237402938409485039850935"
-                }
-              ]
+              "name": "Mr. Shivam Arora",
+              "gender": "male"
+            },
+            "contact": {
+              "phone": "+91-7897898765",
+              "email": "shivam-labsamplecollector@gmail.com"
             }
           },
-          "stops": [
-            {
-              "type": "start",
-              "time": {
-                "timestamp": "2023-08-10T11:00:00Z"
-              },
-              "location": {
-                "gps": "12.9164682,77.6089985"
-              }
-            },
-            {
-              "type": "end",
-              "time": {
-                "timestamp": "2023-08-10T11:59:00Z"
-              },
-              "location": {
-                "gps": "12.9164682,77.6089985"
-              }
-            }
-          ],
           "state": {
             "descriptor": {
               "code": "appointment-cancelled",
@@ -122,13 +150,6 @@
               "currency": "INR",
               "value": "30"
             }
-          },
-          {
-            "title": "cancellation charges",
-            "price": {
-              "currency": "INR",
-              "value": "300"
-            }
           }
         ]
       },
@@ -141,8 +162,11 @@
       "payments": [
         {
           "type": "PRE-FULFILLMENT",
+          "url": "payto://ban/98273982749428?amount=INR:3030&ifsc=SBIN0000575&message=payment",
+          "collected_by": "BPP",
           "status": "PAID",
           "params": {
+            "transaction_id": "ABCD2414143231",
             "amount": "3030",
             "currency": "INR"
           }

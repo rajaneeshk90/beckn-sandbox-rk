@@ -4,11 +4,12 @@
         "action": "search",
         "location": {
             "country": {
-                "name": "India",
                 "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
             }
         },
-        "city": "std:080",
         "version": "1.1.0",
         "bap_id": "ps-bap-network.becknprotocol.io",
         "bap_uri": "https://ps-bap-network.becknprotocol.io/",
@@ -28,12 +29,17 @@
                     "name": "ecg"
                 }
             },
+            "provider": {
+                "id": "e92e7a6e-1f20-4a8d-b343-956e0d45a48c"
+            },
             "location": {
-                "gps": "12.423423,77.325647",
-                "radius": {
-                    "type": "CONSTANT",
-                    "value": "5",
-                    "unit": "km"
+                "circle": {
+                    "gps": "12.423423,77.325647",
+                    "radius": {
+                        "type": "CONSTANT",
+                        "value": "5",
+                        "unit": "km"
+                    }
                 }
             }
         }
