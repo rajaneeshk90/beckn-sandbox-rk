@@ -10,7 +10,6 @@
                 "code": "std:080"
             }
         },
-        
         "version": "1.1.0",
         "bap_id": "ps-bap-network.becknprotocol.io",
         "bap_url": "https://ps-bap-client.becknprotocol.io/",

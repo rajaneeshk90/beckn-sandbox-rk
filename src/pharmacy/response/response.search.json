@@ -4,11 +4,12 @@
         "action": "on_search",
         "location": {
             "country": {
-                "name": "India",
                 "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
             }
         },
-        "city": "std:080",
         "version": "1.1.0",
         "bap_id": "ps-bap-network.becknprotocol.io",
         "bap_url": "https://ps-bap-client.becknprotocol.io/",
@@ -99,9 +100,16 @@
                                 "code": "benadryl",
                                 "name": "Benadryl cough syrup"
                             },
-                            "category_ids": ["cat-01"],
-                            "fulfillment_ids": ["ful-02", "ful-01"],
-                            "location_ids": ["phr-loc-01"],
+                            "category_ids": [
+                                "cat-01"
+                            ],
+                            "fulfillment_ids": [
+                                "ful-02",
+                                "ful-01"
+                            ],
+                            "location_ids": [
+                                "phr-loc-01"
+                            ],
                             "price": {
                                 "value": "100",
                                 "currency": "INR"
@@ -143,9 +151,16 @@
                                 "code": "hycodan",
                                 "name": "Hycodan"
                             },
-                            "category_ids": ["cat-01"],
-                            "fulfillment_ids": ["ful-02", "ful-01"],
-                            "location_ids": ["phr-loc-01"],
+                            "category_ids": [
+                                "cat-01"
+                            ],
+                            "fulfillment_ids": [
+                                "ful-02",
+                                "ful-01"
+                            ],
+                            "location_ids": [
+                                "phr-loc-01"
+                            ],
                             "price": {
                                 "value": "150",
                                 "currency": "INR"
@@ -187,9 +202,16 @@
                                 "code": "mucinex-dm",
                                 "name": "Mucinex DM"
                             },
-                            "category_ids": ["cat-01"],
-                            "fulfillment_ids": ["ful-02", "ful-01"],
-                            "location_ids": ["phr-loc-01"],
+                            "category_ids": [
+                                "cat-01"
+                            ],
+                            "fulfillment_ids": [
+                                "ful-02",
+                                "ful-01"
+                            ],
+                            "location_ids": [
+                                "phr-loc-01"
+                            ],
                             "price": {
                                 "value": "180",
                                 "currency": "INR"

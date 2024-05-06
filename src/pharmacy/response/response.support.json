@@ -4,11 +4,12 @@
         "action": "on_support",
         "location": {
             "country": {
-                "name": "India",
                 "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
             }
         },
-        "city": "std:080",
         "version": "1.1.0",
         "bap_id": "ps-bap-network.becknprotocol.io",
         "bap_url": "https://ps-bap-client.becknprotocol.io/",
@@ -25,7 +26,7 @@
             "callback_phone": "+91-8858150053",
             "email": "support@ekstep.com",
             "phone": "+91-965676879",
-            "url": "https://link-to-doc.com/chat-url-for-support",
+            "url": "chat-url-for-support",
             "docs": [
                 {
                     "descriptor": {
