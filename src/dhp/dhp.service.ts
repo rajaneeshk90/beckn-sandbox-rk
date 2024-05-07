@@ -1,6 +1,7 @@
 import { DomainNotFoundException } from "../common/exception/domain-notfound.exception";
 import { PharmacyApiService } from "../pharmacy/pharmacy-api.service";
 import { ConsultationApiService } from "../consultation/consultation-api.service";
+import { AmbulanceService } from "./ambulance/ambulance.service";
 import { Injectable } from "@nestjs/common";
 import { DHPApiInterface } from "./dhp-api.interface";
 import { DHPTypeEnum } from "./dhp-type.enum";
@@ -16,6 +17,8 @@ export class DHPService {
                 return new ConsultationApiService();
             case DHPTypeEnum.DHPDIAGNOSTICS:
                 return new DiagnosticsApiService();
+            case DHPTypeEnum.DHPAMBULANCE:
+                return new AmbulanceService();
             default:
                 throw new DomainNotFoundException();
         }
