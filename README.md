@@ -1,3 +1,9 @@
+## TL;DR
+
+-   Set BPP Client URL and Base URL in .env
+-   Run `npm install` and `npm run start:dev` to start sandbox
+-   Set the `client.webhook.url` field in BPP Client config/default.yml to the address of this sandbox installation. (Previously you needed to configure a software called beckn-sandbox-webhook. That software is not required anymore.)
+
 ## Project Introduction/Overview
 
 A sandbox environment typically replicates the necessary components of the production system but operates independently. It may include a separate server, database, network, and other resources. By isolating the sandbox environment from the production system, any errors, bugs, or vulnerabilities discovered during testing can be addressed without affecting live users or critical data.
