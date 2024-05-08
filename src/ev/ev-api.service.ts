@@ -12,8 +12,8 @@ import * as supportResponse from "./response/response.support.json";
 import * as ratingResponse from "./response/response.rating.json";
 import * as updateStartResponse from "./response/response.update.start.json";
 import * as updateEndResponse from "./response/response.update.end.json";
-import * as cancellationResponse from "./response/response.cancellation_reasons.json";
-import * as ratingCategories from "./response/response.rating_categories.json";
+import * as cancellationResponse from "./response/response.cancel.json";
+import * as ratingCategories from "./response/response.rating.json";
 
 @Injectable()
 export class EVApiService implements DentApiInterface {
