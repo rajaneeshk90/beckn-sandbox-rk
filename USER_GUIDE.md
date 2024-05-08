@@ -56,11 +56,12 @@ There is a robust logging activated on the BAP and BPP part of the sandbox, whic
 4. BPP Network: https://sandbox-bpp-network.becknprotocol.io/logs
 
 The logs will provided details about
+
 1. Complete end to end BAP / BPP transaction
 2. Error messages if any related to beckn schema validation
 3. Error messages if any related to req / res signature validation
 4. Any BAP / BPP internal errors
-   
+
 ## Collection Variables
 
 You may have noticed that the URL and request JSON body contain variables such as `{{BASE_URL}}, {{COUNTRY}}, {{BAP_ID}}, {{TRANSACTION_ID}}`. These variables are defined at the collection level. To access and manage these variables, follow these steps:
@@ -98,17 +99,15 @@ To set up the sandbox environment on your local machine and create a local playg
 3. BPP Client Protocol Server
 4. BPP Network Protocol Server
 5. Beckn Sandbox
-6. Beckn Sandbox Webhook
-7. Docker Desktop and Docker CLI
+6. Docker Desktop and Docker CLI
 
-## Setting Up Instances of Sandbox and Webhook
+## Setting Up Instances of Sandbox
 
 Below are the steps to setup a Protocol Server instances for your local development environment.
 
-1. Clone Beckn Sandbox and Webhook Repo:
+1. Clone Beckn Sandbox Repo:
 
     - Clone the [Beckn Sandbox Repo](https://github.com/beckn/beckn-sandbox)
-    - Clone the [Beckn Sandbox Webhook Repo](https://github.com/beckn/beckn-sandbox-webhook)
 
 2. Initialize and Install Dependencies:
     - In each cloned repository, switch to the `main` branch using `git checkout main`.
@@ -167,10 +166,10 @@ Below are the steps to setup a Protocol Server instances for your local developm
     - Set the Valid from date to the current date and the Valid until date to a date at least one year ahead.
     - Check the "Verified" checkbox and save the entry.
 
-9. Configure Sandbox Webhook:
+9. Configure Sandbox:
 
-    - In the sandbox-webhook codebase, check the Port in `/src/main.ts`.
-    - Run `lt --port <sandbox-webhook port> --subdomain <any subdomain>` to set up local tunneling for the sandbox webhook.
+    - In the sandbox codebase, check the Port in `/src/main.ts`.
+    - Run `lt --port <sandbox port> --subdomain <any subdomain>` to set up local tunneling for the sandbox.
 
 10. Update Configuration Files:
 
@@ -186,7 +185,7 @@ Below are the steps to setup a Protocol Server instances for your local developm
     -   Subscriber Id: Copy the subscriber ID from the respective Registry entry.
     -   Subscriber Uri: Copy the subscriberUri from the Registry entry.
     -   Unique Key: Copy the participant-key from the Registry entry (participant key tab).
-    -   WebhookURL: Copy paste the URL that you generate by running localtunnel for sandbox-webhook
+    -   WebhookURL: Copy paste the URL that you generate by running localtunnel for sandbox
 
 11. Docker and Docker CLI from [here](https://docs.docker.com/engine/install/).
 
@@ -207,7 +206,7 @@ Below are the steps to setup a Protocol Server instances for your local developm
         -   bpp_uri: Use the localtunnel URL of BPP Network.
         -   core_version: Set it to 1.1.0. If newer versions are available, you can find them [here](https://github.com/beckn/protocol-specifications/releases), and then update it accordingly.
 15. Run the Setup:
-    Open nine separate terminals and run the respective commands for each component, as follows: 1. One for BAP Client: `npm run dev` 2. One for BAP Network: `npm run dev` 3. One for BAP Network localtunnel: Use the localtunnel command from step 6. 4. One for BPP Client: `npm run dev` 5. One for BPP Network: `npm run dev` 6. One for BPP Network localtunnel: Use the localtunnel command from step 6. 7. One for sandbox: `npm run start:dev` 8. One for sandbox-webhook: `npm run start:dev` 9. One for sandbox-webhook localtunnel: Use the localtunnel command from step 9.
+    Open separate terminals and run the respective commands for each component, as follows: 1. One for BAP Client: `npm run dev` 2. One for BAP Network: `npm run dev` 3. One for BAP Network localtunnel: Use the localtunnel command from step 6. 4. One for BPP Client: `npm run dev` 5. One for BPP Network: `npm run dev` 6. One for BPP Network localtunnel: Use the localtunnel command from step 6. 7. One for sandbox: `npm run start:dev` 8. One for sandbox localtunnel: Use the localtunnel command from step 8.
 
 16. Complete the Setup:
     -   Access the Postman collection and initiate requests. You will receive responses from the sandbox.
@@ -235,9 +234,7 @@ The architecture diagram provides an overview of the various components and thei
 
 -   BPP Network Protocol Server: Manages communication between the BAP Network Protocol Server and the BPP Client Protocol Server, including payload validation.
 
--   BPP Client Protocol Server: Responsible for handling requests from the BPP Network Protocol Server and forwarding them to the Sandbox-Webhook App.
-
--   Sandbox-Webhook App: Routes requests from the BPP Client Protocol Server to the appropriate endpoints within the sandbox.
+-   BPP Client Protocol Server: Responsible for handling requests from the BPP Network Protocol Server and forwarding them to the Sandbox App.
 
 -   Sandbox: The sandbox component processes incoming requests, performs required actions, and generates responses.
 
@@ -252,8 +249,6 @@ The sequence diagram complements the architecture diagram by illustrating the fl
 -   Protocol Servers: Including the BAP Client Protocol Server, BAP Network Protocol Server, BPP Network Protocol Server, and BPP Client Protocol Server, these servers validate and route requests.
 
 -   Gateway App: Involved in handling specific API calls and responding accordingly.
-
--   Sandbox-Webhook App: Responsible for routing requests to the sandbox and returning responses to the BPP Client Protocol Server.
 
 -   Sandbox: The central component where requests are processed and responses are generated.
 
@@ -279,14 +274,10 @@ The flow of data between various components in the system follows these steps:
 
 6. The BPP Network Protocol Server processes requests received from the Gateway in the case of Search API calls and from the BAP Network Protocol Server for other API calls. It validates the payload and subsequently communicates with the BPP Client Protocol Server.
 
-7. The BPP Client Protocol Server receives the request and sends it to the Sandbox-Webhook App.
+7. The BPP Client Protocol Server receives the request and sends it to the Sandbox App.
 
-8. The Sandbox-Webhook App, based on the domain specified in the payload, routes the request to the corresponding endpoint within the sandbox.
+8. The sandbox processes the request and generates a response, which it provides to BPP Client Protocol Server.
 
-9. The sandbox processes the request and generates a response, which it provides to the Sandbox-Webhook.
+9. The flow is reversed, with the response passing through the BPP Client Protocol Server, BPP Network Protocol Server, Beckn Gateway App, and finally back to the BAP Network Protocol Server.
 
-10. The Sandbox-Webhook then forwards the response to the BPP Client Protocol Server.
-
-11. The flow is reversed, with the response passing through the BPP Client Protocol Server, BPP Network Protocol Server, Beckn Gateway App, and finally back to the BAP Network Protocol Server.
-
-12. This completes the entire data flow process.
+10. This completes the entire data flow process.

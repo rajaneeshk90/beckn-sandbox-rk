@@ -24,7 +24,7 @@ If you are receiving data from the sandbox, your setup is correct. However, if y
 
 Suggested Possibilities:
 
-**Possibility 1:** It is possible that any of the instances (BPP, Webhook, Sandbox API) are not reachable or may not be responding.
+**Possibility 1:** It is possible that any of the instances (BPP, Sandbox API) are not reachable or may not be responding.
 
 **Solution:** Stop each instance by pressing `Ctrl+C` or `Cmd+C`, and then restart each of them. If the tunnel application is not working correctly or the apps are not properly tunneled, re-run the localtunnel or its alternative to regenerate the public URLs. Afterwards, retry the APIs from the collection and check the response.
 
