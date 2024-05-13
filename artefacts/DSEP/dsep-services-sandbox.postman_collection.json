@@ -1627,6 +1627,307 @@
 			]
 		},
 		{
+			"name": "Student-Connect",
+			"item": [
+				{
+					"name": "Search",
+					"item": [
+						{
+							"name": "Search with item name",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:student-connect\",\n        \"action\": \"search\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"timestamp\": \"{{$timestamp}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"{{trans_id}}\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"item\": {\n                \"descriptor\": {\n                    \"name\": \"Mayank\"\n                }\n            }\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/search",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search With Item and location",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:student-connect\",\n        \"action\": \"search\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"timestamp\": \"{{$timestamp}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"{{trans_id}}\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"fulfilment\" : {\n                \"stops\" : [\n                    {\n                        \"location\": {\n                            \"gps\": \"12.423423,77.325647\",\n                            \"circle\" : {\n                                \"radius\": {\n                                    \"type\": \"CONSTANT\",\n                                    \"value\": \"5\",\n                                    \"unit\": \"km\"\n                                }\n                            }\n                        }\n                    }\n                ]\n            },\n            \"item\": {\n                \"descriptor\": {\n                    \"name\": \"Mayank\"\n                }\n            }\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/search",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search With Skill tags",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:student-connect\",\n        \"action\": \"search\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"timestamp\": \"{{$timestamp}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"transaction_id\": \"{{trans_id}}\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"item\": {\n                \"tags\" : [\n                    {\n                        \"descriptor\" : {\n                            \"name\" : \"skills\"\n                        },\n                        \"list\" : [\n                          {\n                            \"value\" : \"Agile\"\n                          },\n                          {\n                            \"value\" : \"Figma\"\n                          }\n                        ]\n                    }\n                ]\n            }\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/search",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"search"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Select",
+					"item": [
+						{
+							"name": "Select-Physical-Fulfillment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:student-connect\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"select\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2022-10-11T09:55:41.161Z\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"289edce4-d002-4962-b311-4c025e22b4f6\"\n            },\n            \"fulfillments\": [\n                {\n                \"id\": \"ful-02\"\n                }\n            ],\n            \"items\": [\n                {\n                \"id\": \"1224\"\n                }\n            ]\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/select",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"select"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Select-Virtual-Fulfillment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:student-connect\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"select\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2022-10-11T09:55:41.161Z\"\n    },\n    \"message\": {\n        \"order\": {\n            \"provider\": {\n                \"id\": \"289edce4-d002-4962-b311-4c025e22b4f6\"\n            },\n            \"fulfillments\": [\n                {\n                \"id\": \"ful-01\"\n                }\n            ],\n            \"items\": [\n                {\n                \"id\": \"1224\"\n                }\n            ]\n        }\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/select",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"select"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Init",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:student-connect\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"init\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"timestamp\": \"2022-12-15T15:38:16.226Z\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"ttl\": \"PT10M\",\n        \"transaction_id\": \"bdb5ba09-2241-4f00-b434-73466cd06228\"\n    },\n    \"message\": {\n    \"order\": {\n      \"provider\": {\n        \"id\": \"289edce4-d002-4962-b311-4c025e22b4f6\"\n      },\n      \"fulfillments\": [\n        {\n          \"id\": \"ful-01\",\n          \"customer\": {\n            \"person\": {\n              \"name\": \"Amkur Singh\",\n              \"gender\": \"Male\"\n            },\n            \"contact\": {\n              \"phone\": \"+91-9663088848\",\n              \"email\": \"ankur.singh@fide.com\"\n            }\n          },\n          \"stops\": [\n            {\n              \"time\": {\n                \"label\": \"Scheduled Time\",\n                \"range\": {\n                  \"start\": \"2023-12-04 14:00\",\n                  \"end\": \"2023-12-04 14:30\"\n                }\n              }\n            }\n          ]\n        }\n      ],\n      \"items\": [\n        {\n          \"id\": \"1224\"\n        }\n      ]\n    }\n  }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/init",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"init"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Confirm",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n       \"domain\": \"dsep:student-connect\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"confirm\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c62195\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2022-10-11T09:55:41.161Z\"\n    },\n    \"message\": {\n    \"order\": {\n      \"provider\": {\n        \"id\": \"289edce4-d002-4962-b311-4c025e22b4f6\"\n      },\n      \"fulfillments\": [\n        {\n          \"id\": \"ful-01\",\n          \"customer\": {\n            \"person\": {\n              \"name\": \"Amkur Singh\",\n              \"gender\": \"Male\"\n            },\n            \"contact\": {\n              \"phone\": \"+91-9663088848\",\n              \"email\": \"ankur.singh@fide.com\"\n            }\n          },\n          \"stops\": [\n            {\n              \"time\": {\n                \"label\": \"Scheduled Time\",\n                \"range\": {\n                  \"start\": \"2023-12-04 14:00\",\n                  \"end\": \"2023-12-04 14:30\"\n                }\n              }\n            }\n          ]\n        }\n      ],\n      \"items\": [\n        {\n          \"id\": \"1224\"\n        }\n      ]\n    }\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/confirm",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"confirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:student-connect\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"status\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"transaction_id\": \"a9aaecca-10b7-4d19-b640-b047a7c60008\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"2023-02-06T09:55:41.161Z\"\n    },\n    \"message\": {\n        \"order_id\": \"759b905c-5a30-4d18-a6af-0decbac9282f\"\n    }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/status",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update-Personal-Details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:student-connect\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"update\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"timestamp\": \"2022-12-15T15:38:16.226Z\",\n        \"message_id\": \"{{$randomUUID}}\",\n\n        \"ttl\": \"PT10M\",\n        \"transaction_id\": \"bdb5ba09-2241-4f00-b434-73466cd06228\"\n    },\n      \"message\": {\n    \"order\": {\n      \"id\": \"759b905c-5a30-4d18-a6af-0decbac9282f\",\n      \"fulfillments\": [\n        {\n          \"customer\": {\n            \"person\": {\n              \"name\": \"Ankur Singh Warikoo\",\n              \"gender\": \"Male\"\n            },\n            \"contact\": {\n              \"phone\": \"+91-9663088848\",\n              \"email\": \"ankur.singhw@fide.com\"\n            }\n          }\n        }\n      ]\n    },\n    \"update_target\": \"order.fulfillments[0].customer\"\n  }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update-Booking-Slot",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:student-connect\",\n        \"location\": {\n            \"country\": {\n                \"name\": \"India\",\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"name\": \"Bangalore\",\n                \"code\": \"std:080\"\n            }\n        },\n        \"action\": \"update\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"timestamp\": \"2022-12-15T15:38:16.226Z\",\n        \"message_id\": \"{{$randomUUID}}\",\n\n        \"ttl\": \"PT10M\",\n        \"transaction_id\": \"bdb5ba09-2241-4f00-b434-73466cd06228\"\n    },\n    \"message\": {\n        \"order\": {\n            \"id\": \"759b905c-5a30-4d18-a6af-0decbac9282f\",\n            \"fulfillments\": [\n                {\n                \"stops\": [\n                    {\n                    \"time\": {\n                        \"label\": \"Scheduled Time\",\n                        \"range\": {\n                        \"start\": \"2023-12-05 18:00\",\n                        \"end\": \"2023-12-05 18:30\"\n                        }\n                    }\n                    }\n                ]\n                }\n            ]\n        },\n    \"update_target\": \"order.fulfillments[0].stops[0].time\"\n  }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"context\": {\n        \"domain\": \"dsep:student-connect\",\n        \"action\": \"cancel\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"bpp_id\": \"{{bpp_id}}\",\n        \"bpp_uri\": \"{{bpp_uri}}\",\n        \"timestamp\": \"2022-12-15T15:38:16.226Z\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"ttl\": \"PT10M\",\n        \"transaction_id\": \"bdb5ba09-2241-4f00-b434-73466cd06228\"\n    },\n    \"message\": {\n        \"order_id\": \"759b905c-5a30-4d18-a6af-0decbac9282f\",\n        \"cancellation_reason_id\": \"4\",\n        \"descriptor\": {\n            \"short_desc\": \"Not Needed\"\n        }\n    }\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/cancel",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cancel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Scholarships & Grants",
 			"item": [
 				{
