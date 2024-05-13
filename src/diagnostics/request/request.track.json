@@ -4,11 +4,12 @@
         "action": "track",
         "location": {
             "country": {
-                "name": "India",
                 "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
             }
         },
-        "city": "std:080",
         "version": "1.1.0",
         "bap_id": "ps-bap-network.becknprotocol.io",
         "bap_uri": "https://ps-bap-network.becknprotocol.io/",
@@ -19,7 +20,7 @@
         "timestamp": "2023-07-16T04:41:16Z"
     },
     "message": {
-        "order_id": "853c7593-f4bf-4557-8832-118a591787ba",
+        "order_id": "be69bb43-8286-48b4-801f-a8c5b41ad450",
         "callback_url": "https://dhp-network-bap.becknprotocol.io/track/callback"
     }
 }

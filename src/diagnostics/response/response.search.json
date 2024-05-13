@@ -4,11 +4,12 @@
     "action": "on_search",
     "location": {
       "country": {
-        "name": "India",
         "code": "IND"
+      },
+      "city": {
+        "code": "std:080"
       }
     },
-    "city": "std:080",
     "version": "1.1.0",
     "bap_id": "ps-bap-network.becknprotocol.io",
     "bap_url": "https://ps-bap-client.becknprotocol.io/",
@@ -29,12 +30,37 @@
           "descriptor": {
             "name": "GioLabs Pvt Ltd",
             "short_desc": "X-rays, tests and more",
+            "long_desc": "Advanced diagnostics & precise testing at XYZ Pathology Lab. Fast, accurate results for informed healthcare decisions.",
             "images": [
               {
                 "url": "https://giolabs.in/images/logo.png"
               }
+            ],
+            "media": [
+              {
+                "mimetype": "application/pdf",
+                "url": "https://www.aiims.com/honours/237402938409485039850935"
+              },
+              {
+                "mimetype": "application/pdf",
+                "url": "https://www.aiims.com/honours/2374029384094850394240935"
+              }
             ]
           },
+          "location": [
+            {
+              "gps": "12.9716° N, 77.5946° E",
+              "address": "Akashya nagar B17/14",
+              "state": {
+                "name": "Madhya Pradesh"
+              },
+              "city": {
+                "name": "Bhopal"
+              },
+              "area_code": "462001"
+            }
+          ],
+          "rating": "4.5",
           "categories": [
             {
               "id": "cat-01",
@@ -61,98 +87,40 @@
           "fulfillments": [
             {
               "id": "ful-01",
-              "type": "OPD",
-              "agent": {
-                "person": {
-                  "id": "237402938409485039850935",
-                  "name": "Dr Asthana",
-                  "gender": "male",
-                  "creds": [
-                    {
-                      "id": "237402938409485039850935",
-                      "type": "VerifiableCredential",
-                      "url": "https://www.aiims.com/honours/237402938409485039850935"
-                    }
-                  ],
-                  "languages": [
-                    {
-                      "code": "hindi",
-                      "name": "Hindi"
-                    },
-                    {
-                      "code": "english",
-                      "name": "English"
-                    },
-                    {
-                      "code": "kannada",
-                      "name": "Kannada"
-                    }
-                  ],
-                  "skills": [
-                    {
-                      "code": "mbbs",
-                      "name": "MBBS"
-                    },
-                    {
-                      "code": "md",
-                      "name": "MD"
-                    }
-                  ]
-                }
-              }
+              "type": "walk-in"
             },
             {
               "id": "ful-02",
-              "type": "OPD",
-              "agent": {
-                "person": {
-                  "id": "237402938409485039850935",
-                  "name": "Dr Bhargava",
-                  "gender": "female",
-                  "creds": [
-                    {
-                      "id": "237402938409485039850935",
-                      "type": "VerifiableCredential",
-                      "url": "https://www.aiims.com/honours/237402938409485039850935"
-                    }
-                  ],
-                  "languages": [
-                    {
-                      "code": "hindi",
-                      "name": "Hindi"
-                    },
-                    {
-                      "code": "english",
-                      "name": "English"
-                    },
-                    {
-                      "code": "kannada",
-                      "name": "Kannada"
-                    }
-                  ],
-                  "skills": [
-                    {
-                      "code": "mbbs",
-                      "name": "MBBS"
-                    },
-                    {
-                      "code": "md",
-                      "name": "MD"
-                    }
-                  ]
-                }
-              }
+              "type": "doorstep service"
             }
           ],
           "items": [
             {
-              "id": "cardiology-01",
+              "id": "lab-test-01",
               "descriptor": {
                 "code": "ecg",
                 "name": "Electrocardiogram test"
               },
               "price": {
                 "value": "3000",
+                "currency": "INR"
+              },
+              "category_ids": [
+                "cat-01"
+              ],
+              "fulfillment_ids": [
+                "ful-01",
+                "ful-02"
+              ]
+            },
+            {
+              "id": "lab-test-02",
+              "descriptor": {
+                "code": "cmri",
+                "name": "Cardiac MRI test"
+              },
+              "price": {
+                "value": "8900",
                 "currency": "INR"
               },
               "category_ids": [

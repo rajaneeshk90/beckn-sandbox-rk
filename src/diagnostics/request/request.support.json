@@ -4,11 +4,12 @@
         "action": "support",
         "location": {
             "country": {
-                "name": "India",
                 "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
             }
         },
-        "city": "std:080",
         "version": "1.1.0",
         "bap_id": "ps-bap-network.becknprotocol.io",
         "bap_uri": "https://ps-bap-network.becknprotocol.io/",
@@ -20,9 +21,8 @@
     },
     "message": {
         "support": {
-            "order_id": "759b905c-5a30-4d18-a6af-0decbac9282f",
-            "phone": "+919876543210",
-            "email": "john.doe@gmail.com"
+            "ref_id": "be69bb43-8286-48b4-801f-a8c5b41ad450",
+            "callback_phone": "+91-8858150053"
         }
     }
 }

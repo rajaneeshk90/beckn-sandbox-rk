@@ -4,11 +4,12 @@
         "action": "on_select",
         "location": {
             "country": {
-                "name": "India",
                 "code": "IND"
+            },
+            "city": {
+                "code": "std:080"
             }
         },
-        "city": "std:080",
         "version": "1.1.0",
         "bap_id": "ps-bap-network.becknprotocol.io",
         "bap_url": "https://ps-bap-client.becknprotocol.io/",
@@ -45,8 +46,12 @@
                         "value": "300",
                         "currency": "INR"
                     },
-                    "category_ids": ["cat-02"],
-                    "fulfillment_ids": ["ful-01"],
+                    "category_ids": [
+                        "cat-02"
+                    ],
+                    "fulfillment_ids": [
+                        "ful-01"
+                    ],
                     "time": {
                         "duration": "PT30M"
                     }
@@ -112,7 +117,7 @@
                     "stops": [
                         {
                             "location": {
-                                "gps": "12.9164682,77.6089985",
+                                "gps": "12.9716° N, 77.5946° E",
                                 "address": "Akashya nagar B17/14",
                                 "state": {
                                     "name": "Madhya Pradesh"
@@ -126,12 +131,16 @@
                                 "label": "Consultancy Slots",
                                 "duration": "PT30M",
                                 "range": {
-                                    "start": "0000-00-00T10:00:00.00Z",
-                                    "end": "0000-00-00T18:00:00.00Z"
+                                    "start": "10:00",
+                                    "end": "18:00"
                                 },
                                 "days": "1,2,3,4,5,6",
                                 "schedule": {
-                                    "holidays": ["2023-11-11T00:00:00.00Z", "2023-11-12T00:00:00.00Z", "2023-11-13T00:00:00.00Z"]
+                                    "holidays": [
+                                        "2023-11-11",
+                                        "2023-11-12",
+                                        "2023-11-13"
+                                    ]
                                 }
                             }
                         }

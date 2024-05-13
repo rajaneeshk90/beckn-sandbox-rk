@@ -4,9 +4,11 @@ import { ConsultationModule } from "src/consultation/consultation.module";
 import { DiagnosticsModule } from "src/diagnostics/diagnostics.module";
 import { DHPController } from "./dhp.controller";
 import { DHPService } from "./dhp.service";
+import { AmbulanceModule } from './ambulance/ambulance.module';
+import { BloodbankModule } from './bloodbank/bloodbank.module';
 
 @Module({
-    imports: [PharmacyModule, ConsultationModule, DiagnosticsModule],
+    imports: [PharmacyModule, ConsultationModule, DiagnosticsModule, AmbulanceModule, BloodbankModule],
     controllers: [DHPController],
     providers: [DHPService],
 })

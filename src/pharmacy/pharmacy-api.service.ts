@@ -12,8 +12,7 @@ import * as supportResponse from "./response/response.support.json";
 import * as ratingResponse from "./response/response.rating.json";
 import * as updateResponse from "./response/response.update.json";
 import * as trackResponse from "./response/response.track.json";
-import * as cancellationResponse from "./response/response.cancellation_reasons.json";
-import * as ratingCategories from "./response/response.rating_categories.json";
+import { log } from "console";
 
 @Injectable()
 export class PharmacyApiService implements DHPApiInterface {
@@ -46,11 +45,5 @@ export class PharmacyApiService implements DHPApiInterface {
     };
     support = function () {
         return supportResponse;
-    };
-    cancellationReasons = function () {
-        return cancellationResponse;
-    };
-    ratingCategories = function () {
-        return ratingCategories;
     };
 }
