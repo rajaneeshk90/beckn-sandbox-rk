@@ -21,6 +21,8 @@ export class AppService {
                 domainPath = `industry-4.0`;
             } else if (body.context.domain === "online-dispute-resolution:0.1.0") {
                 domainPath = `odr`;
+            } else if (body.context.domain.includes("mobility")) {
+                domainPath = `mobility`;
             } else if (body.context.domain.includes("retail")) {
                 const default_version = "1.1.0";
                 let version = default_version;
