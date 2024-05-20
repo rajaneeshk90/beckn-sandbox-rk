@@ -13,11 +13,15 @@
     },
     "message": {
         "order": {
-            "id": "jdhflks",
+            "provider": {
+                "id": "1"
+            },
             "items": [
                 {
-                    "id": "8A690F158A37965A2CC0E69EC8B360B2",
-                    "fulfillment_ids": ["1"]
+                    "id": "a23f2fdfbbb8ac402bf259d75402eb0792f50c095f7d08a55475e7af1c2dadca",
+                    "fulfillment_ids": [
+                        "1"
+                    ]
                 }
             ],
             "fulfillments": [
@@ -26,29 +30,78 @@
                     "customer": {
                         "person": {
                             "name": "Sanjay",
-
-                            "gender": "M",
-                            "creds": [
+                            "gender": "Male",
+                            "age": "35",
+                            "skills": [
                                 {
-                                    "id": "claimId:af7e0b1b5c4858eb",
-                                    "type": "GenderData",
-                                    "url": "https://cloud-wallet-api.prod.affinity-project.org/api/v1/share/b8a2c0cbc5a02da03d2aecb59094672a8e0b16a1c845456bd18678529d6901df?key=beda347c431e02319bd31c63e5f5f5f5e14939efdb6697ce4d93c87eade27c47"
+                                    "name": "Android"
                                 },
                                 {
-                                    "id": "claimId:af7e0b1b5c4858eb",
-                                    "type": "ResumeVC",
-                                    "url": "https://cloud-wallet-api.prod.affinity-project.org/api/v1/share/b8a2c0cbc5a02da03d2aecb59094672a8e0b16a1c845456bd18678529d6901df?key=beda347c431e02319bd31c63e5f5f5f5e14939efdb6697ce4d93c87eade27c47"
+                                    "name": "AWS"
+                                }
+                            ],
+                            "languages": [
+                                {
+                                    "code": "en",
+                                    "name": "english"
+                                },
+                                {
+                                    "code": "ml",
+                                    "name": "Malayalam"
+                                },
+                                {
+                                    "code": "hi",
+                                    "name": "Hindi"
                                 }
                             ],
                             "tags": [
                                 {
-                                    "code": "func_skills",
+                                    "code": "current-experience",
                                     "list": [
                                         {
-                                            "code": "Android"
+                                            "descriptor": {
+                                                "code": "exp-years",
+                                                "name": "Experience"
+                                            },
+                                            "value": "P4Y2M"
                                         },
                                         {
-                                            "code": "AWS"
+                                            "descriptor": {
+                                                "code": "current-company",
+                                                "name": "Current Company"
+                                            },
+                                            "value": "ABC tech"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "salary-details",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "expected-salary",
+                                                "name": "Expected Salary"
+                                            },
+                                            "value": "80000"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "current-salary",
+                                                "name": "Current Salary"
+                                            },
+                                            "value": "50000"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "code": "documents",
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "resume",
+                                                "name": "resume"
+                                            },
+                                            "value": "https://link-to-the-document.com"
                                         }
                                     ]
                                 }

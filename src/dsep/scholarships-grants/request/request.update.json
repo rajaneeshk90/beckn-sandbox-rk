@@ -22,17 +22,25 @@
         "message_id": "49ab0adb-1444-4b02-9e79-736e27b7cb2a"
     },
     "message": {
-        "update_target": "order.fulfillments[0].contact",
         "order": {
+            "id": "12424kh",
             "fulfillments": [
                 {
-                    "contact": {
-                        "phone": "998842423",
-                        "email": "maryofficial@xyz.com"
+                    "customer": {
+                        "id": "aadhaar:798677675565",
+                        "person": {
+                            "name": "Jane Doe",
+                            "age": "13",
+                            "gender": "female"
+                        },
+                        "contact": {
+                            "phone": "+91-8858150042",
+                            "email": "jane.doe@example.com"
+                        }
                     }
                 }
-            ],
-            "id": "a9aaecca-10b7-4d19-b640-b047a7c621961676906777032"
-        }
+            ]
+        },
+        "update_target": "order.fulfillments[0].customer"
     }
 }

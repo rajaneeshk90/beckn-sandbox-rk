@@ -22,14 +22,10 @@
     },
     "message": {
         "intent": {
-            "provider": {
-                "categories": [
-                    {
-                        "descriptor": {
-                            "code": "ug"
-                        }
-                    }
-                ]
+            "item": {
+                "descriptor": {
+                    "name": "scholarship for undergraduate"
+                }
             },
             "fulfillment": {
                 "customer": {

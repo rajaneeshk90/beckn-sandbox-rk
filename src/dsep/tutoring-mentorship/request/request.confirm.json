@@ -32,10 +32,7 @@
             "billing": {
                 "name": "Van Bode III",
                 "phone": "881-311-2951 x01508",
-                "email": "Sonny_Auera1@yahoo1.com",
-                "time": {
-                    "timezone": "IST"
-                }
+                "email": "Sonny_Auera1@yahoo1.com"
             }
         }
     }

@@ -19,8 +19,23 @@
         "timestamp": "2023-02-23T08:09:02.172Z"
     },
     "message": {
-        "phone": "1800 010 008",
-        "email": "support@dsep.samagra.io",
-        "uri": "www.supportdsepsamagra.com"
+        "support": {
+            "ref_id": "Abjhjh13773",
+            "order_id": "1677140405881",
+            "callback_phone": "+91-8858150053",
+            "email": "support@ekstep.com",
+            "phone": "+91-965676879",
+            "url": "chat-url-for-support",
+            "docs": [
+                {
+                    "descriptor": {
+                        "name": "FAQs",
+                        "short_desc": "Frequently asked questions and common issues"
+                    },
+                    "url": "https://link-to-the-document.com",
+                    "mime_type": "application/pdf"
+                }
+            ]
+        }
     }
 }

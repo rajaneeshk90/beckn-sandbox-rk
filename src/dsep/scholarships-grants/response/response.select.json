@@ -24,31 +24,52 @@
     },
     "message": {
         "order": {
-            "type": "DEFAULT",
             "provider": {
                 "id": "BX213573733",
                 "descriptor": {
-                    "name": "Navjyoti Education Trust",
-                    "short_desc": "Navjyoti Education Trust"
+                    "name": "XYZ Education Foundation",
+                    "short_desc": "Short Description about the Foundation",
+                    "images": [
+                        {
+                            "url": "url of the image of the provider"
+                        }
+                    ]
                 },
+                "locations": [
+                    {
+                        "id": "L1",
+                        "city": "Pune",
+                        "state": "Maharastra"
+                    },
+                    {
+                        "id": "L2",
+                        "city": "Thane",
+                        "state": "Maharastra"
+                    },
+                    {
+                        "id": "L3",
+                        "city": "Lucknow",
+                        "state": "Uttar Pradesh"
+                    }
+                ],
                 "rateable": false
             },
             "items": [
                 {
                     "id": "SCM_63587501",
                     "descriptor": {
-                        "name": "Agile Excellence Scholarship",
-                        "long_desc": "Empowering aspiring leaders with financial support for Agile Scrum Master certification, fostering organizational agility and effective team leadership."
+                        "name": "XYZ Education Scholarship for Undergraduate Students",
+                        "short_desc": "XYZ Education Scholarship for Undergraduate Students"
                     },
                     "price": {
                         "currency": "INR",
-                        "value": "25000"
+                        "value": "Upto RS.1000 per year"
                     },
-                    "xinput": {
-                        "required": true,
-                        "form": {
-                            "url": "http://localhost:8001/public/getForm/a9aaecca-10b7-4d19-b640-022723112309/da0052a822dc4cdf95ab136b5614d0c9",
-                            "mime_type": "text/html"
+                    "time": {
+                        "label": "Start  & End date of the Application",
+                        "range": {
+                            "start": "2022-09-01T00:00:00.000Z",
+                            "end": "2022-10-31T00:00:00.000Z"
                         }
                     },
                     "rateable": false,
@@ -56,55 +77,123 @@
                         {
                             "display": true,
                             "descriptor": {
-                                "code": "edu_qual",
-                                "name": "Academic Eligibility"
+                                "code": "soc-elg",
+                                "name": "Social Eligibility"
                             },
                             "list": [
                                 {
-                                    "descriptor": {
-                                        "code": "gr",
-                                        "name": "Grade"
-                                    },
-                                    "value": "Grade 12",
-                                    "display": true
+                                    "value": "SC"
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "percentage_grade",
-                                        "name": "Percentage/Grade"
-                                    },
-                                    "value": ">= 50",
-                                    "display": true
+                                    "value": "ST"
                                 },
                                 {
-                                    "descriptor": {
-                                        "code": "passing_year",
-                                        "name": "Passing Year"
-                                    },
-                                    "value": "2021",
-                                    "display": false
+                                    "value": "OBC"
                                 }
                             ]
                         },
                         {
                             "display": true,
                             "descriptor": {
-                                "code": "benefits",
-                                "name": "Benefits"
+                                "code": "gen-elg",
+                                "name": "Gender Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "value": "Female"
+                                },
+                                {
+                                    "value": "Transgender"
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "fin-elg",
+                                "name": "Financial Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "value": "Max Family Income - Rs.500000.00"
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "acad-elg",
+                                "name": "Academic Eligibility"
                             },
                             "list": [
                                 {
                                     "descriptor": {
-                                        "code": "scholarship-amount",
-                                        "name": "Scholarship Amount"
+                                        "code": "class",
+                                        "name": "Class"
                                     },
-                                    "value": "Upto Rs.25000 per year",
-                                    "display": true
+                                    "value": "12th"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "percentage",
+                                        "name": "Percentage"
+                                    },
+                                    "value": ">= 50"
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "docs-reqd",
+                                "name": "Documents Required"
+                            },
+                            "list": [
+                                {
+                                    "value": "10th Marksheet"
+                                },
+                                {
+                                    "value": "Aadhar Card of the Student"
+                                },
+                                {
+                                    "value": "Aadhar Card of the Parent"
+                                },
+                                {
+                                    "value": "Pan Card of the Parent"
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "add-info",
+                                "name": "Additional Information"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "faq-url",
+                                        "name": "Frequently Asked Questions's URL"
+                                    },
+                                    "value": "https://www.xyz-scholarship.com/faq"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "tnc-url",
+                                        "name": "Terms and Conditions's URL"
+                                    },
+                                    "value": "https://www.xyz-scholarship.com/tnc"
                                 }
                             ]
                         }
                     ],
-                    "category_ids": ["DSEP_CAT_1"]
+                    "location_ids": [
+                        "L1",
+                        "L2"
+                    ],
+                    "category_ids": [
+                        "DSEP_CAT_1"
+                    ]
                 }
             ],
             "fulfillments": [
@@ -112,26 +201,45 @@
                     "id": "DSEP_FUL_63587501",
                     "type": "SCHOLARSHIP",
                     "tracking": false,
-                    "contact": {
-                        "phone": "9876543210",
-                        "email": "maryg@xyz.com"
-                    },
-                    "stops": [
-                        {
-                            "type": "APPLICATION-START",
-                            "time": {
-                                "timestamp": "2022-09-01T00:00:00.000Z"
-                            }
+                    "agent": {
+                        "person": {
+                            "name": "Ekstep Foundation SPoc"
                         },
-                        {
-                            "type": "APPLICATION-END",
-                            "time": {
-                                "timestamp": "2022-10-31T00:00:00.000Z"
-                            }
+                        "contact": {
+                            "email": "ekstepsupport@ekstep.com"
                         }
-                    ]
+                    }
                 }
-            ]
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "250000"
+                },
+                "breakup": [
+                    {
+                        "title": "Tution fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "150000"
+                        }
+                    },
+                    {
+                        "title": "Hostel fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "50000"
+                        }
+                    },
+                    {
+                        "title": "Books",
+                        "price": {
+                            "currency": "INR",
+                            "value": "50000"
+                        }
+                    }
+                ]
+            }
         }
     }
 }

@@ -25,776 +25,161 @@
     "message": {
         "catalog": {
             "descriptor": {
-                "name": "Catalog for undefined"
+                "name": "Catalog for English courses"
             },
             "providers": [
                 {
-                    "id": "NCERT",
+                    "id": "INFOSYS",
                     "descriptor": {
-                        "name": "NCERT"
+                        "name": "Infosys Springboard",
+                        "short_desc": "Infosys Springboard Digital literacy program",
+                        "images": [
+                            {
+                                "url": "https://infyspringboard.onwingspan.com/web/assets/images/infosysheadstart/app_logos/landing-new.png",
+                                "size_type": "sm"
+                            }
+                        ]
                     },
                     "categories": [
                         {
-                            "id": "SCHOOL",
-                            "parent_category_id": "SCHOOL",
+                            "id": "LANGUAGE-COURSES",
                             "descriptor": {
-                                "name": "SCHOOL"
+                                "code": "LANGUAGE-COURSES",
+                                "name": "Language Courses"
                             }
                         },
                         {
-                            "id": "SCHOOL",
-                            "parent_category_id": "SCHOOL",
+                            "id": "SKILL-DEVELOPMENT-COURSES",
                             "descriptor": {
-                                "name": "SCHOOL"
+                                "code": "SKILL-DEVELOPMENT-COURSES",
+                                "name": "Skill development Courses"
                             }
                         },
                         {
-                            "id": "SCHOOL",
-                            "parent_category_id": "SCHOOL",
+                            "id": "TECHNICAL-COURSES",
                             "descriptor": {
-                                "name": "SCHOOL"
+                                "code": "TECHNICAL-COURSES",
+                                "name": "Technical Courses"
                             }
                         },
                         {
-                            "id": "SCHOOL",
-                            "parent_category_id": "SCHOOL",
+                            "id": "SELF-PACED-COURSES",
                             "descriptor": {
-                                "name": "SCHOOL"
-                            }
-                        },
-                        {
-                            "id": "SCHOOL",
-                            "parent_category_id": "SCHOOL",
-                            "descriptor": {
-                                "name": "SCHOOL"
-                            }
-                        },
-                        {
-                            "id": "SCHOOL",
-                            "parent_category_id": "SCHOOL",
-                            "descriptor": {
-                                "name": "SCHOOL"
-                            }
-                        },
-                        {
-                            "id": "SCHOOL",
-                            "parent_category_id": "SCHOOL",
-                            "descriptor": {
-                                "name": "SCHOOL"
-                            }
-                        },
-                        {
-                            "id": "SCHOOL",
-                            "parent_category_id": "SCHOOL",
-                            "descriptor": {
-                                "name": "SCHOOL"
-                            }
-                        },
-                        {
-                            "id": "SCHOOL",
-                            "parent_category_id": "SCHOOL",
-                            "descriptor": {
-                                "name": "SCHOOL"
-                            }
-                        },
-                        {
-                            "id": "SCHOOL",
-                            "parent_category_id": "SCHOOL",
-                            "descriptor": {
-                                "name": "SCHOOL"
+                                "code": "SELF-PACED-COURSES",
+                                "name": "Self Paced Courses"
                             }
                         }
                     ],
                     "items": [
                         {
-                            "id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDE=",
-                            "parent_item_id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDE=",
+                            "id": "d4975df5-b18c-4772-80ad-368669856d52",
+                            "quantity": {
+                                "maximum": {
+                                    "count": 1
+                                }
+                            },
                             "descriptor": {
-                                "name": "Accountancy XI Part-I",
-                                "long_desc": "",
+                                "name": "Everyday Conversational English",
+                                "short_desc": "Elevate your daily conversations with confidence through our 'Everyday Conversational English' course.",
+                                "long_desc": "<p><strong>Course Overview:</strong><br>Welcome to 'Everyday Conversational English,' your key to mastering essential language skills for real-life communication. Tailored for all levels, this course offers:</p><ol><li><strong>Practical Vocabulary:</strong><br>Learn everyday expressions for seamless communication.</li><li><strong>Interactive Role-Playing:</strong><br>Apply knowledge through immersive exercises for real-world scenarios.</li><li><strong>Cultural Insights:</strong><br>Gain cultural nuances to connect authentically in conversations.</li><li><strong>Real-Life Scenarios:</strong><br>Navigate common situations with confidence-building tools.</li><li><strong>Quiz Assessments:</strong><br>Reinforce learning through quizzes for ongoing skill development.</li></ol><p><strong>Why Take This Course:</strong></p><ul><li><strong>Personal & Professional Growth:</strong><br>Enhance personal connections and gain a professional edge.</li><li><strong>Cultural Fluency:</strong><br>Understand and engage with diverse cultures confidently.</li><li><strong>Life-Long Skill:</strong><br>Develop a valuable skill applicable across various life stages.</li></ul><p>Join 'Everyday Conversational English' and elevate your communication for meaningful connections and success.</p>",
                                 "images": [
                                     {
-                                        "url": "https://storage.googleapis.com/swayam-node2-production.appspot.com/assets/img/nce22_sc29/accountancy01-01%20(4).jpg"
+                                        "url": "https://infyspringboard.onwingspan.com/web/assets/images/infosysheadstart/everyday-conversational-english.png"
+                                    }
+                                ],
+                                "media": [
+                                    {
+                                        "url": "https://infyspringboard.onwingspan.com/web/courses/infosysheadstart/everyday-conversational-english/preview/"
                                     }
                                 ]
+                            },
+                            "creator": {
+                                "descriptor": {
+                                    "name": "Prof. Emma Sullivan",
+                                    "short_desc": "Experienced language educator dedicated to fostering practical conversational skills and cultural fluency",
+                                    "long_desc": "Hello, I'm Prof. Emma Sullivan, your guide in 'Everyday Conversational English.' With over a decade of experience, I'm here to make language learning dynamic and culturally enriching. Let's explore practical communication skills together for personal and professional growth. Join me on this exciting journey!",
+                                    "images": [
+                                        {
+                                            "url": "https://infyspringboard.onwingspan.com/web/assets/images/infosysheadstart/ins/1.png"
+                                        }
+                                    ]
+                                }
                             },
                             "price": {
                                 "currency": "INR",
                                 "value": "0"
                             },
-                            "category_id": "SCHOOL",
-                            "recommended": false,
-                            "time": {
-                                "label": "Course Schedule",
-                                "duration": "P24W",
-                                "range": {
-                                    "start": "2023-04-20T18:29:00.000000Z",
-                                    "end": "2023-09-30T18:29:00.000000Z"
-                                }
-                            },
-                            "rating": "1",
+                            "category_ids": [
+                                "LANGUAGE-COURSES",
+                                "SELF-PACED-COURSES"
+                            ],
+                            "rating": "4.5",
+                            "rateable": true,
                             "tags": [
                                 {
                                     "descriptor": {
-                                        "name": "courseInfo"
+                                        "code": "content-metadata",
+                                        "name": "Content metadata"
                                     },
                                     "list": [
                                         {
                                             "descriptor": {
-                                                "name": "credits"
+                                                "code": "learner-level",
+                                                "name": "Learner level"
                                             },
-                                            "value": "0"
+                                            "value": "Beginner"
                                         },
                                         {
                                             "descriptor": {
-                                                "name": "instructors"
+                                                "code": "learning-objective",
+                                                "name": "Learning objective"
                                             },
-                                            "value": "Prof. Shipra Vaidya"
+                                            "value": "By the end of the course, learners will confidently navigate everyday conversations, demonstrating improved fluency, cultural awareness, and effective communication skills."
                                         },
                                         {
                                             "descriptor": {
-                                                "name": "offeringInstitue"
+                                                "code": "prerequisite",
+                                                "name": "Prerequisite"
                                             },
-                                            "value": "DESS, NCERT, New Delhi"
+                                            "value": "Should have a basic understanding of English"
                                         },
                                         {
                                             "descriptor": {
-                                                "name": "url"
+                                                "code": "prerequisite",
+                                                "name": "Prerequisite"
                                             },
-                                            "value": "https://onlinecourses.swayam2.ac.in/nce23_sc01/preview"
+                                            "value": "Access to a computer or internet to access the course online"
                                         },
                                         {
-                                            "decsriptor": {
-                                                "name": "enrollmentEndDate"
+                                            "descriptor": {
+                                                "code": "lang-code",
+                                                "name": "Language code"
                                             },
-                                            "value": "2023-08-31T18:29:00.000000Z"
+                                            "value": "en"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "course-duration",
+                                                "name": "Course duration"
+                                            },
+                                            "value": "P20H"
                                         }
                                     ],
                                     "display": true
                                 }
-                            ],
-                            "rateable": false
-                        },
+                            ]
+                        }
+                    ],
+                    "fulfillments": [
                         {
-                            "id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDI=",
-                            "parent_item_id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDI=",
-                            "descriptor": {
-                                "name": "Biology XI Part-I",
-                                "long_desc": "",
-                                "images": [
-                                    {
-                                        "url": "https://storage.googleapis.com/swayam-node2-production.appspot.com/assets/img/nce22_sc30/biology01.jpg"
-                                    }
-                                ]
-                            },
-                            "price": {
-                                "currency": "INR",
-                                "value": "0"
-                            },
-                            "category_id": "SCHOOL",
-                            "recommended": false,
-                            "time": {
-                                "label": "Course Schedule",
-                                "duration": "P24W",
-                                "range": {
-                                    "start": "2023-04-20T18:29:00.000000Z",
-                                    "end": "2023-09-30T18:29:00.000000Z"
+                            "agent": {
+                                "person": {
+                                    "name": "Infosys Springboard"
+                                },
+                                "contact": {
+                                    "email": "support@infy.com"
                                 }
-                            },
-                            "rating": "3",
-                            "tags": [
-                                {
-                                    "descriptor": {
-                                        "name": "courseInfo"
-                                    },
-                                    "list": [
-                                        {
-                                            "descriptor": {
-                                                "name": "credits"
-                                            },
-                                            "value": "0"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "instructors"
-                                            },
-                                            "value": "Dr. Sunita Farkya"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "offeringInstitue"
-                                            },
-                                            "value": "DESM, NCERT, New Delhi"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "url"
-                                            },
-                                            "value": "https://onlinecourses.swayam2.ac.in/nce23_sc02/preview"
-                                        },
-                                        {
-                                            "decsriptor": {
-                                                "name": "enrollmentEndDate"
-                                            },
-                                            "value": "2023-08-31T18:29:00.000000Z"
-                                        }
-                                    ],
-                                    "display": true
-                                }
-                            ],
-                            "rateable": false
-                        },
-                        {
-                            "id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDM=",
-                            "parent_item_id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDM=",
-                            "descriptor": {
-                                "name": "Biology XI Part-II",
-                                "long_desc": "",
-                                "images": [
-                                    {
-                                        "url": "https://storage.googleapis.com/swayam-node2-production.appspot.com/assets/img/nce22_sc31/biology02.jpg"
-                                    }
-                                ]
-                            },
-                            "price": {
-                                "currency": "INR",
-                                "value": "0"
-                            },
-                            "category_id": "SCHOOL",
-                            "recommended": false,
-                            "time": {
-                                "label": "Course Schedule",
-                                "duration": "P24W",
-                                "range": {
-                                    "start": "2023-04-20T18:29:00.000000Z",
-                                    "end": "2023-09-30T18:29:00.000000Z"
-                                }
-                            },
-                            "rating": "5",
-                            "tags": [
-                                {
-                                    "descriptor": {
-                                        "name": "courseInfo"
-                                    },
-                                    "list": [
-                                        {
-                                            "descriptor": {
-                                                "name": "credits"
-                                            },
-                                            "value": "0"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "instructors"
-                                            },
-                                            "value": "Dr. Sunita Farkya"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "offeringInstitue"
-                                            },
-                                            "value": "DESM, NCERT, New Delhi"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "url"
-                                            },
-                                            "value": "https://onlinecourses.swayam2.ac.in/nce23_sc03/preview"
-                                        },
-                                        {
-                                            "decsriptor": {
-                                                "name": "enrollmentEndDate"
-                                            },
-                                            "value": "2023-08-31T18:29:00.000000Z"
-                                        }
-                                    ],
-                                    "display": true
-                                }
-                            ],
-                            "rateable": false
-                        },
-                        {
-                            "id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDQ=",
-                            "parent_item_id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDQ=",
-                            "descriptor": {
-                                "name": "Biology XII Part-I",
-                                "long_desc": "",
-                                "images": [
-                                    {
-                                        "url": "https://storage.googleapis.com/swayam-node2-production.appspot.com/assets/img/nce22_sc32/Biology03copy2%20(1).jpg"
-                                    }
-                                ]
-                            },
-                            "price": {
-                                "currency": "INR",
-                                "value": "0"
-                            },
-                            "category_id": "SCHOOL",
-                            "recommended": false,
-                            "time": {
-                                "label": "Course Schedule",
-                                "duration": "P24W",
-                                "range": {
-                                    "start": "2023-04-20T18:29:00.000000Z",
-                                    "end": "2023-09-30T18:29:00.000000Z"
-                                }
-                            },
-                            "rating": "1",
-                            "tags": [
-                                {
-                                    "descriptor": {
-                                        "name": "courseInfo"
-                                    },
-                                    "list": [
-                                        {
-                                            "descriptor": {
-                                                "name": "credits"
-                                            },
-                                            "value": "0"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "instructors"
-                                            },
-                                            "value": "Dr. Sunita Farkya"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "offeringInstitue"
-                                            },
-                                            "value": "DESM, NCERT, New Delhi"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "url"
-                                            },
-                                            "value": "https://onlinecourses.swayam2.ac.in/nce23_sc04/preview"
-                                        },
-                                        {
-                                            "decsriptor": {
-                                                "name": "enrollmentEndDate"
-                                            },
-                                            "value": "2023-08-31T18:29:00.000000Z"
-                                        }
-                                    ],
-                                    "display": true
-                                }
-                            ],
-                            "rateable": false
-                        },
-                        {
-                            "id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDU=",
-                            "parent_item_id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDU=",
-                            "descriptor": {
-                                "name": "Business Studies XI Part-I",
-                                "long_desc": "",
-                                "images": [
-                                    {
-                                        "url": "https://storage.googleapis.com/swayam-node2-production.appspot.com/assets/img/nce22_sc33/businessstudies01.jpg"
-                                    }
-                                ]
-                            },
-                            "price": {
-                                "currency": "INR",
-                                "value": "0"
-                            },
-                            "category_id": "SCHOOL",
-                            "recommended": false,
-                            "time": {
-                                "label": "Course Schedule",
-                                "duration": "P24W",
-                                "range": {
-                                    "start": "2023-04-20T18:29:00.000000Z",
-                                    "end": "2023-09-30T18:29:00.000000Z"
-                                }
-                            },
-                            "rating": "5",
-                            "tags": [
-                                {
-                                    "descriptor": {
-                                        "name": "courseInfo"
-                                    },
-                                    "list": [
-                                        {
-                                            "descriptor": {
-                                                "name": "credits"
-                                            },
-                                            "value": "0"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "instructors"
-                                            },
-                                            "value": "Dr. Punnam Veeraiah"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "offeringInstitue"
-                                            },
-                                            "value": "RIE Campus, Shyamla Hills, Bhopal"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "url"
-                                            },
-                                            "value": "https://onlinecourses.swayam2.ac.in/nce23_sc05/preview"
-                                        },
-                                        {
-                                            "decsriptor": {
-                                                "name": "enrollmentEndDate"
-                                            },
-                                            "value": "2023-08-31T18:29:00.000000Z"
-                                        }
-                                    ],
-                                    "display": true
-                                }
-                            ],
-                            "rateable": false
-                        },
-                        {
-                            "id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDY=",
-                            "parent_item_id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDY=",
-                            "descriptor": {
-                                "name": "Business Studies XII Part-I",
-                                "long_desc": "",
-                                "images": [
-                                    {
-                                        "url": "https://storage.googleapis.com/swayam-node2-production.appspot.com/assets/img/nce22_sc34/businessstudies03.jpg"
-                                    }
-                                ]
-                            },
-                            "price": {
-                                "currency": "INR",
-                                "value": "0"
-                            },
-                            "category_id": "SCHOOL",
-                            "recommended": false,
-                            "time": {
-                                "label": "Course Schedule",
-                                "duration": "P24W",
-                                "range": {
-                                    "start": "2023-04-20T18:29:00.000000Z",
-                                    "end": "2023-09-30T18:29:00.000000Z"
-                                }
-                            },
-                            "rating": "1",
-                            "tags": [
-                                {
-                                    "descriptor": {
-                                        "name": "courseInfo"
-                                    },
-                                    "list": [
-                                        {
-                                            "descriptor": {
-                                                "name": "credits"
-                                            },
-                                            "value": "0"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "instructors"
-                                            },
-                                            "value": "Dr. Punnam Veeraiah"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "offeringInstitue"
-                                            },
-                                            "value": "RIE Campus, Shyamla Hills, Bhopal"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "url"
-                                            },
-                                            "value": "https://onlinecourses.swayam2.ac.in/nce23_sc06/preview"
-                                        },
-                                        {
-                                            "decsriptor": {
-                                                "name": "enrollmentEndDate"
-                                            },
-                                            "value": "2023-08-31T18:29:00.000000Z"
-                                        }
-                                    ],
-                                    "display": true
-                                }
-                            ],
-                            "rateable": false
-                        },
-                        {
-                            "id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDc=",
-                            "parent_item_id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDc=",
-                            "descriptor": {
-                                "name": "Chemistry XI Part-I",
-                                "long_desc": "",
-                                "images": [
-                                    {
-                                        "url": "https://storage.googleapis.com/swayam-node2-production.appspot.com/assets/img/nce22_sc35/chemistry01-copy2.jpg"
-                                    }
-                                ]
-                            },
-                            "price": {
-                                "currency": "INR",
-                                "value": "0"
-                            },
-                            "category_id": "SCHOOL",
-                            "recommended": false,
-                            "time": {
-                                "label": "Course Schedule",
-                                "duration": "P24W",
-                                "range": {
-                                    "start": "2023-04-20T18:29:00.000000Z",
-                                    "end": "2023-09-30T18:29:00.000000Z"
-                                }
-                            },
-                            "rating": "2",
-                            "tags": [
-                                {
-                                    "descriptor": {
-                                        "name": "courseInfo"
-                                    },
-                                    "list": [
-                                        {
-                                            "descriptor": {
-                                                "name": "credits"
-                                            },
-                                            "value": "0"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "instructors"
-                                            },
-                                            "value": "Prof R K Parashar"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "offeringInstitue"
-                                            },
-                                            "value": "DESM, NIE, NCERT"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "url"
-                                            },
-                                            "value": "https://onlinecourses.swayam2.ac.in/nce23_sc07/preview"
-                                        },
-                                        {
-                                            "decsriptor": {
-                                                "name": "enrollmentEndDate"
-                                            },
-                                            "value": "2023-08-31T18:29:00.000000Z"
-                                        }
-                                    ],
-                                    "display": true
-                                }
-                            ],
-                            "rateable": false
-                        },
-                        {
-                            "id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDg=",
-                            "parent_item_id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDg=",
-                            "descriptor": {
-                                "name": "Chemistry XI Part-II",
-                                "long_desc": "",
-                                "images": [
-                                    {
-                                        "url": "https://storage.googleapis.com/swayam-node2-production.appspot.com/assets/img/nce22_sc36/chemistry02.jpg"
-                                    }
-                                ]
-                            },
-                            "price": {
-                                "currency": "INR",
-                                "value": "0"
-                            },
-                            "category_id": "SCHOOL",
-                            "recommended": false,
-                            "time": {
-                                "label": "Course Schedule",
-                                "duration": "P24W",
-                                "range": {
-                                    "start": "2023-04-20T18:29:00.000000Z",
-                                    "end": "2023-09-30T18:29:00.000000Z"
-                                }
-                            },
-                            "rating": "5",
-                            "tags": [
-                                {
-                                    "descriptor": {
-                                        "name": "courseInfo"
-                                    },
-                                    "list": [
-                                        {
-                                            "descriptor": {
-                                                "name": "credits"
-                                            },
-                                            "value": "0"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "instructors"
-                                            },
-                                            "value": "Prof R K Parashar"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "offeringInstitue"
-                                            },
-                                            "value": "DESM, NIE, NCERT"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "url"
-                                            },
-                                            "value": "https://onlinecourses.swayam2.ac.in/nce23_sc08/preview"
-                                        },
-                                        {
-                                            "decsriptor": {
-                                                "name": "enrollmentEndDate"
-                                            },
-                                            "value": "2023-08-31T18:29:00.000000Z"
-                                        }
-                                    ],
-                                    "display": true
-                                }
-                            ],
-                            "rateable": false
-                        },
-                        {
-                            "id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDk=",
-                            "parent_item_id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMDk=",
-                            "descriptor": {
-                                "name": "Chemistry XII Part-I",
-                                "long_desc": "",
-                                "images": [
-                                    {
-                                        "url": "https://storage.googleapis.com/swayam-node2-production.appspot.com/assets/img/nce22_sc37/chemistry03.jpg"
-                                    }
-                                ]
-                            },
-                            "price": {
-                                "currency": "INR",
-                                "value": "0"
-                            },
-                            "category_id": "SCHOOL",
-                            "recommended": false,
-                            "time": {
-                                "label": "Course Schedule",
-                                "duration": "P24W",
-                                "range": {
-                                    "start": "2023-04-20T17:30:00.000000Z",
-                                    "end": "2023-09-29T18:30:00.000000Z"
-                                }
-                            },
-                            "rating": "5",
-                            "tags": [
-                                {
-                                    "descriptor": {
-                                        "name": "courseInfo"
-                                    },
-                                    "list": [
-                                        {
-                                            "descriptor": {
-                                                "name": "credits"
-                                            },
-                                            "value": "0"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "instructors"
-                                            },
-                                            "value": "Prof R. K. Parashar"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "offeringInstitue"
-                                            },
-                                            "value": "DESM, NIE, NCERT, New Delhi"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "url"
-                                            },
-                                            "value": "https://onlinecourses.swayam2.ac.in/nce23_sc09/preview"
-                                        },
-                                        {
-                                            "decsriptor": {
-                                                "name": "enrollmentEndDate"
-                                            },
-                                            "value": "2023-08-31T18:29:00.000000Z"
-                                        }
-                                    ],
-                                    "display": true
-                                }
-                            ],
-                            "rateable": false
-                        },
-                        {
-                            "id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMTA=",
-                            "parent_item_id": "Q291cnNlTGlzdDovbmQyX25jZTIzX3NjMTA=",
-                            "descriptor": {
-                                "name": "Economics XI Part-I",
-                                "long_desc": "",
-                                "images": [
-                                    {
-                                        "url": "https://storage.googleapis.com/swayam-node2-production.appspot.com/assets/img/nce22_sc38/economics01.jpg"
-                                    }
-                                ]
-                            },
-                            "price": {
-                                "currency": "INR",
-                                "value": "0"
-                            },
-                            "category_id": "SCHOOL",
-                            "recommended": false,
-                            "time": {
-                                "label": "Course Schedule",
-                                "duration": "P24W",
-                                "range": {
-                                    "start": "2023-04-20T18:29:00.000000Z",
-                                    "end": "2023-09-30T18:29:00.000000Z"
-                                }
-                            },
-                            "rating": "2",
-                            "tags": [
-                                {
-                                    "descriptor": {
-                                        "name": "courseInfo"
-                                    },
-                                    "list": [
-                                        {
-                                            "descriptor": {
-                                                "name": "credits"
-                                            },
-                                            "value": "0"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "instructors"
-                                            },
-                                            "value": "Dr. M.V. Srinivasan"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "offeringInstitue"
-                                            },
-                                            "value": "DESS, New Delhi"
-                                        },
-                                        {
-                                            "descriptor": {
-                                                "name": "url"
-                                            },
-                                            "value": "https://onlinecourses.swayam2.ac.in/nce23_sc10/preview"
-                                        },
-                                        {
-                                            "decsriptor": {
-                                                "name": "enrollmentEndDate"
-                                            },
-                                            "value": "2023-08-31T18:29:00.000000Z"
-                                        }
-                                    ],
-                                    "display": true
-                                }
-                            ],
-                            "rateable": false
+                            }
                         }
                     ]
                 }
