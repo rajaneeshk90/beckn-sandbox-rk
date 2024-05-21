@@ -32,7 +32,7 @@
                     "short_desc": "Short Description about the Foundation",
                     "images": [
                         {
-                            "url": "url of the image of the provider"
+                            "url": "https://via.placeholder.com/150"
                         }
                     ]
                 },
@@ -171,13 +171,8 @@
                             ]
                         }
                     ],
-                    "location_ids": [
-                        "L1",
-                        "L2"
-                    ],
-                    "fulfillment_ids": [
-                        "VSP_FUL_1113"
-                    ]
+                    "location_ids": ["L1", "L2"],
+                    "fulfillment_ids": ["VSP_FUL_1113"]
                 }
             ],
             "billing": {

@@ -14,9 +14,9 @@
     },
     "message": {
         "tracking": {
-          "id": "66666ahhf9u385",
-          "url": "tracking-url-for-course-progress",
-          "status": "active"
+            "id": "66666ahhf9u385",
+            "url": "http://www.sometrackingApp.com/tracking-url-for-course-progress",
+            "status": "active"
         }
-      }
+    }
 }
