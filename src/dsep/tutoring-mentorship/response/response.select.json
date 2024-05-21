@@ -45,9 +45,7 @@
                         "value": "0"
                     },
                     "id": "63f1ebc423df082856936510",
-                    "category_ids": [
-                        "Infrastructure-Management"
-                    ],
+                    "category_ids": ["Infrastructure-Management"],
                     "descriptor": {
                         "images": [
                             {
@@ -59,9 +57,7 @@
                         "short_desc": "A level Tags Test 1 session on class room management for state schools and colleges.",
                         "long_desc": "A level Tags Test 1 session on class room management for state schools and colleges."
                     },
-                    "fulfillment_ids": [
-                        "3f8fb3a3-f018-40e6-9b96-8b7bbd5df965"
-                    ],
+                    "fulfillment_ids": ["3f8fb3a3-f018-40e6-9b96-8b7bbd5df965"],
                     "tags": [
                         {
                             "display": true,
@@ -157,8 +153,8 @@
                         {
                             "time": {
                                 "range": {
-                                    "start": "2023-02-19T23:23:16",
-                                    "end": "2023-02-20T01:23:16"
+                                    "start": "2023-02-19T23:23:16.000Z",
+                                    "end": "2023-02-20T01:23:16.000Z"
                                 },
                                 "label": "Session Timing"
                             }
