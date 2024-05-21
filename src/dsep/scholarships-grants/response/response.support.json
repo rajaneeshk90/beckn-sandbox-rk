@@ -22,24 +22,23 @@
         "message_id": "49ab0adb-1444-4b02-9e79-736e27b7cb2a"
     },
     "message": {
-        "support" : {
-            "ref_id" : "Abjhjh13773",
-            "order_id" : "12424kh",
-            "callback_phone" : "+91-8858150053",
-            "email" : "support@ekstep.com",
-            "phone" : "+91-965676879",
-            "url" : "chat-url-for-support",
+        "support": {
+            "ref_id": "Abjhjh13773",
+            "order_id": "12424kh",
+            "callback_phone": "+91-8858150053",
+            "email": "support@ekstep.com",
+            "phone": "+91-965676879",
+            "url": "http://www.chat-url-for-support.com",
             "docs": [
                 {
-                    "descriptor":{
-                        "name" :"FAQs",
-                        "short_desc" : "Frequently asked questions and common issues"
+                    "descriptor": {
+                        "name": "FAQs",
+                        "short_desc": "Frequently asked questions and common issues"
                     },
-                    "url" : "https://link-to-the-document.com",
-                    "mime_type" : "application/pdf"
+                    "url": "https://link-to-the-document.com",
+                    "mime_type": "application/pdf"
                 }
             ]
-
-        }  
+        }
     }
 }

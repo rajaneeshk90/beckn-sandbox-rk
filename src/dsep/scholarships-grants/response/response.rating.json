@@ -22,12 +22,12 @@
         "message_id": "49ab0adb-1444-4b02-9e79-736e27b7cb2a"
     },
     "message": {
-        "feedback_form" : {
-            "form" : {
-                "url" : "url of the feedback form",
-                "mime_type" :"text/html"
+        "feedback_form": {
+            "form": {
+                "url": "https://via.form.com/150",
+                "mime_type": "text/html"
             },
-            "required" : true
-        } 
+            "required": true
+        }
     }
 }
