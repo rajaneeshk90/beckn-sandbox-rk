@@ -15,7 +15,7 @@
     "message": {
         "feedback_form": {
             "form": {
-                "url": "url of the feedback form",
+                "url": "http://www.ratingform.com",
                 "mime_type": "text/html"
             },
             "required": true
