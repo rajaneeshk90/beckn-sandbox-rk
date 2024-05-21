@@ -35,7 +35,7 @@
                         "short_desc": "Short Description about the Foundation",
                         "images": [
                             {
-                                "url": "url of the image of the provider"
+                                "url": "http://www.someurl.com"
                             }
                         ]
                     },
@@ -227,16 +227,9 @@
                                     ]
                                 }
                             ],
-                            "category_ids": [
-                                "DSEP_CAT_1"
-                            ],
-                            "fulfillment_ids": [
-                                "DSEP_FUL_63587501"
-                            ],
-                            "location_ids": [
-                                "L1",
-                                "L2"
-                            ]
+                            "category_ids": ["DSEP_CAT_1"],
+                            "fulfillment_ids": ["DSEP_FUL_63587501"],
+                            "location_ids": ["L1", "L2"]
                         }
                     ],
                     "rateable": false
