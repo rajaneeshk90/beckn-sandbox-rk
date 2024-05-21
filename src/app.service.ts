@@ -1,5 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import axios from "axios";
+import { BPP_ID, BPP_URI } from "./common/constants";
 
 @Injectable()
 export class AppService {
@@ -48,6 +49,8 @@ export class AppService {
             responseData.context.bap_uri = body.context.bap_uri;
             responseData.context.transaction_id = body.context.transaction_id;
             responseData.context.domain = body.context.domain;
+            responseData.context.bpp_id = BPP_ID;
+            responseData.context.bpp_uri = BPP_URI;
 
             if (body?.context?.bpp_id) responseData.context.bpp_id = body.context.bpp_id;
 

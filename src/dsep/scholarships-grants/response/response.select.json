@@ -31,25 +31,25 @@
                     "short_desc": "Short Description about the Foundation",
                     "images": [
                         {
-                            "url": "url of the image of the provider"
+                            "url": "https://via.placeholder.com/150"
                         }
                     ]
                 },
                 "locations": [
                     {
                         "id": "L1",
-                        "city": "Pune",
-                        "state": "Maharastra"
+                        "city": { "name": "Pune" },
+                        "state": { "name": "Maharastra" }
                     },
                     {
                         "id": "L2",
-                        "city": "Thane",
-                        "state": "Maharastra"
+                        "city": { "name": "Thane" },
+                        "state": { "name": "Maharastra" }
                     },
                     {
                         "id": "L3",
-                        "city": "Lucknow",
-                        "state": "Uttar Pradesh"
+                        "city": { "name": "Lucknow" },
+                        "state": { "name": "Uttar Pradesh" }
                     }
                 ],
                 "rateable": false
@@ -187,13 +187,8 @@
                             ]
                         }
                     ],
-                    "location_ids": [
-                        "L1",
-                        "L2"
-                    ],
-                    "category_ids": [
-                        "DSEP_CAT_1"
-                    ]
+                    "location_ids": ["L1", "L2"],
+                    "category_ids": ["DSEP_CAT_1"]
                 }
             ],
             "fulfillments": [
