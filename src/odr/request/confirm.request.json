@@ -37,7 +37,9 @@
                 "name": "John Doe",
                 "email": "john.doe@example.com",
                 "address": "21A, ABC Appartments, HSR Layout, Bengaluru",
-                "city": "Bengaluru"
+                "city": {
+                    "name": "Bengaluru"
+                }
             },
             "fulfillments": [
                 {
@@ -62,7 +64,7 @@
                     "type": "PRE-ORDER",
                     "status": "PAID",
                     "time": {
-                        "timestamp": "82368943294"
+                        "timestamp": "2023-05-25T05:25:03.443Z"
                     }
                 }
             ]
