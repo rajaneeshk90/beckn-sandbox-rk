@@ -16,7 +16,13 @@
                             "name": "Search-based-on-Ttile-and-Location",
                             "request": {
                                 "method": "POST",
-                                "header": [],
+                                "header": [
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Signature keyId=\"ps-bap-network.becknprotocol.io|ps-bap-network.becknprotocol.io-key|ed25519\",algorithm=\"ed25519\",created=\"1716441077\",expires=\"1716444677\",headers=\"(created) (expires) digest\",signature=\"AY+l4rcsJGqi/2HUL93dk0K7nFliRZOqkmO1vy4VEF23zTlRVCyqs0tSFoUpKIltLB6oSvYusOpQ3hT7+0QDAQ==\"",
+                                        "uuid": "ead3ed70-7acf-43c8-a051-3c4a0817e85e"
+                                    }
+                                ],
                                 "body": {
                                     "mode": "raw",
                                     "raw": "{\n    \"context\": {\n        \"domain\": \"dsep:jobs\",\n        \"action\": \"search\",\n        \"version\": \"{{core_version}}\",\n        \"bap_id\": \"{{bap_id}}\",\n        \"bap_uri\": \"{{bap_uri}}\",\n        \"location\": {\n            \"country\": {\n                \"code\": \"IND\"\n            },\n            \"city\": {\n                \"code\": \"std:080\"\n            }\n        },\n        \"transaction_id\": \"{{trans_id}}\",\n        \"message_id\": \"{{$randomUUID}}\",\n        \"timestamp\": \"{{$timestamp}}\"\n    },\n    \"message\": {\n        \"intent\": {\n            \"item\": {\n                \"descriptor\": {\n                    \"name\": \"Engineer\"\n                }\n            },\n            \"provider\": {\n                \"descriptor\": {\n                    \"name\": \"Affinidi\"\n                },\n                \"locations\": [\n                    {\n                        \"city\": {\n                            \"name\": \"Bangalore\"\n                        }\n                    }\n                ]\n            }\n        }\n    }\n}",
@@ -2455,7 +2461,8 @@
                                     {
                                         "key": "Content-Type",
                                         "value": "application/json",
-                                        "type": "text"
+                                        "type": "text",
+                                        "uuid": "f094675a-aaae-46e4-a208-c5dc5176498c"
                                     }
                                 ],
                                 "body": {
@@ -2478,7 +2485,8 @@
                                     {
                                         "key": "Content-Type",
                                         "value": "application/json",
-                                        "type": "text"
+                                        "type": "text",
+                                        "uuid": "6c88f5e3-2fe3-4fe8-b55e-361c58e13e9e"
                                     }
                                 ],
                                 "body": {
@@ -2501,7 +2509,8 @@
                                     {
                                         "key": "Content-Type",
                                         "value": "application/json",
-                                        "type": "text"
+                                        "type": "text",
+                                        "uuid": "447bbe07-fa57-45a9-9133-cd2e748c3120"
                                     }
                                 ],
                                 "body": {
@@ -2524,7 +2533,8 @@
                                     {
                                         "key": "Content-Type",
                                         "value": "application/json",
-                                        "type": "text"
+                                        "type": "text",
+                                        "uuid": "f592916e-f4df-46f8-8e99-282909b76985"
                                     }
                                 ],
                                 "body": {
@@ -2547,7 +2557,8 @@
                                     {
                                         "key": "Content-Type",
                                         "value": "application/json",
-                                        "type": "text"
+                                        "type": "text",
+                                        "uuid": "855b6a48-7b41-4895-8684-9b43dcb56b93"
                                     }
                                 ],
                                 "body": {
@@ -2572,7 +2583,8 @@
                             {
                                 "key": "Content-Type",
                                 "value": "application/json",
-                                "type": "text"
+                                "type": "text",
+                                "uuid": "557d4b44-8ac9-4a7c-a46a-bb8c7b0da414"
                             }
                         ],
                         "body": {
@@ -2595,7 +2607,8 @@
                             {
                                 "key": "Content-Type",
                                 "value": "application/json",
-                                "type": "text"
+                                "type": "text",
+                                "uuid": "50903dea-eaab-48c0-980f-cd1f97237b48"
                             }
                         ],
                         "body": {
@@ -2618,7 +2631,8 @@
                             {
                                 "key": "Content-Type",
                                 "value": "application/json",
-                                "type": "text"
+                                "type": "text",
+                                "uuid": "b52b56c2-dd26-408e-965d-7e48e5c470a6"
                             }
                         ],
                         "body": {
@@ -2641,7 +2655,8 @@
                             {
                                 "key": "Content-Type",
                                 "value": "application/json",
-                                "type": "text"
+                                "type": "text",
+                                "uuid": "80ddaa95-975b-48b2-b630-4a4546e67b8e"
                             }
                         ],
                         "body": {
@@ -2664,7 +2679,8 @@
                             {
                                 "key": "Content-Type",
                                 "value": "application/json",
-                                "type": "text"
+                                "type": "text",
+                                "uuid": "c0aca705-45ab-4edc-aa1f-cc86fe945c9c"
                             }
                         ],
                         "body": {
@@ -2687,7 +2703,8 @@
                             {
                                 "key": "Content-Type",
                                 "value": "application/json",
-                                "type": "text"
+                                "type": "text",
+                                "uuid": "c953c9dc-1275-4b5b-b255-0776f1140015"
                             }
                         ],
                         "body": {
@@ -2710,7 +2727,8 @@
                             {
                                 "key": "Content-Type",
                                 "value": "application/json",
-                                "type": "text"
+                                "type": "text",
+                                "uuid": "b8bef9f4-8aed-46f1-83d5-05d9a4d309a0"
                             }
                         ],
                         "body": {
@@ -2733,7 +2751,8 @@
                             {
                                 "key": "Content-Type",
                                 "value": "application/json",
-                                "type": "text"
+                                "type": "text",
+                                "uuid": "da629fb5-c86f-47c1-af4e-36289fbe452c"
                             }
                         ],
                         "body": {
@@ -2756,7 +2775,8 @@
                             {
                                 "key": "Content-Type",
                                 "value": "application/json",
-                                "type": "text"
+                                "type": "text",
+                                "uuid": "6d9eb869-63ea-4a16-9f4b-d082973d7603"
                             }
                         ],
                         "body": {
@@ -2793,22 +2813,22 @@
     "variable": [
         {
             "key": "bap_uri",
-            "value": "https://bap-ps-network-dev.becknprotocol.io",
+            "value": "https://ps-bap-network.becknprotocol.io",
             "type": "string"
         },
         {
             "key": "bap_id",
-            "value": "bap-ps-network-dev.becknprotocol.io",
+            "value": "ps-bap-network.becknprotocol.io",
             "type": "string"
         },
         {
             "key": "base_url",
-            "value": "https://bap-ps-client-dev.becknprotocol.io",
+            "value": "https://ps-bap-client.becknprotocol.io",
             "type": "string"
         },
         {
             "key": "bpp_id",
-            "value": "bpp-ps-network-sandbox-dev.becknprotocol.io",
+            "value": "sandbox-bpp-network.becknprotocol.io",
             "type": "string"
         },
         {
