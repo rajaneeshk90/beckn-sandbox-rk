@@ -1,28 +1,28 @@
 {
     "context": {
-        "domain": "tourism",
+        "domain": "localretail:shopping",
         "location": {
             "country": {
                 "code": "IND"
             },
             "city": {
-                "code": "std:080"
+                "code": "std:011"
             }
         },
         "action": "on_support",
         "version": "1.1.0",
-        "bap_id": "tourism-bap",
-        "bap_uri": "https://tourism-bap.url",
-        "bpp_id": "tourism-bpp",
-        "bpp_uri": "https://tourism-bpp.url",
-        "message_id": "6104c0a3-d1d1-4ded-aaa4-76e4caf727ce",
+        "bap_id": "dsnp-bap-id",
+        "bap_uri": "https://55a6-124-123-32-28.ngrok-free.app",
+        "bpp_id": "dsnp-bpp-id",
+        "bpp_uri": "https://4e21-124-123-32-28.ngrok-free.app",
+        "message_id": "1f507212-23fe-4acc-a34e-d25b459ad105",
         "transaction_id": "8100d125-76a7-4588-88be-81b97657cd09",
-        "timestamp": "2023-11-06T09:41:09.708Z",
+        "timestamp": "2023-11-06T10:14:10.295Z",
         "ttl": "PT10M"
     },
     "message": {
         "support": {
-            "ref_id": "oid0909",
+            "ref_id": "d4975df5-b18c-4772-80ad",
             "callback_phone": "+91 8765495826",
             "phone": "+91 9876543298",
             "email": "abcd.support@support.com"
