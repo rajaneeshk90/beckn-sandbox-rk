@@ -13,9 +13,10 @@ import { ODRModule } from "./odr/odr.module";
 import { LocalRetailModule } from "./local-retail/local-retail.module";
 import { TourismModule } from "./tourism/tourism.module";
 import { CityOfLightModule } from './city-of-light/city-of-light.module';
+import { DSNPModule } from "./dsnp/dsnp.module";
 
 @Module({
-    imports: [MobilityModule, CommonModule, FinancialServicesModule, DsepModule, DentModule, DHPModule, Industry40Module, ODRModule, LocalRetailModule, TourismModule, CityOfLightModule],
+    imports: [MobilityModule, CommonModule, FinancialServicesModule, DsepModule, DentModule, DHPModule, Industry40Module, ODRModule, LocalRetailModule, TourismModule, CityOfLightModule, DSNPModule],
     controllers: [AppController],
     providers: [AppService],
 })
