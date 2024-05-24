@@ -12,9 +12,10 @@ import { Industry40Module } from "./industry-4.0/industry-4.0.module";
 import { ODRModule } from "./odr/odr.module";
 import { LocalRetailModule } from "./local-retail/local-retail.module";
 import { TourismModule } from "./tourism/tourism.module";
+import { DSNPModule } from "./dsnp/dsnp.module";
 
 @Module({
-    imports: [MobilityModule, CommonModule, FinancialServicesModule, DsepModule, DentModule, DHPModule, Industry40Module, ODRModule, LocalRetailModule, TourismModule],
+    imports: [MobilityModule, CommonModule, FinancialServicesModule, DsepModule, DentModule, DHPModule, Industry40Module, ODRModule, LocalRetailModule, TourismModule, DSNPModule],
     controllers: [AppController],
     providers: [AppService],
 })
