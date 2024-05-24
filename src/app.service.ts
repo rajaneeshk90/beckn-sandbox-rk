@@ -27,7 +27,7 @@ export class AppService {
             } else if (body.context.domain.includes("tourism")) {
                 domainPath = `tourism`;
             } else if (body.context.domain.includes("localretail:shopping")) {
-                domainPath = `localretail:shopping`;
+                domainPath = `dsnp`;
             } else if (body.context.domain.includes("retail")) {
                 const default_version = "1.1.0";
                 let version = default_version;
