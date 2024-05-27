@@ -28,6 +28,8 @@ export class AppService {
                 domainPath = `tourism`;
             } else if (body.context.domain.includes("localretail:shopping")) {
                 domainPath = `dsnp`;
+            } else if (body.context.domain.includes('retail:CityOfLight')) {
+                domainPath = `city-of-light`;
             } else if (body.context.domain.includes("retail")) {
                 const default_version = "1.1.0";
                 let version = default_version;
