@@ -40,7 +40,7 @@
                 {
                     "id": "2e0c2b39-84d2-4b58-af8b-8b6d7b0c3f97",
                     "descriptor": {
-                        "images": ["https://m.media-amazon.com/images/I/61kQ4hs3LpL._AC_UY1100_.jpg"],
+                        "images": [{ "url": "https://m.media-amazon.com/images/I/61kQ4hs3LpL._AC_UY1100_.jpg" }],
                         "name": "Adventure Sunglasses",
                         "short_desc": "Experience the outdoors in style with our Adventure Sunglasses. These high-quality sunglasses provide UV protection and are designed for maximum comfort during your treks and hikes.",
                         "long_desc": "<p>Upgrade your outdoor adventures with our Adventure Sunglasses. Whether you're trekking through rugged terrain or relaxing at the campsite, these sunglasses offer superior UV protection and glare reduction. Featuring durable frames and polarized lenses, they provide clarity and comfort in any environment.</p>"
