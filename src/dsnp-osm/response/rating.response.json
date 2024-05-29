@@ -6,7 +6,7 @@
                 "code": "IND"
             },
             "city": {
-                "code": "std:011"
+                "code": "std:080"
             }
         },
         "action": "on_rating",
