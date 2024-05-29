@@ -17,7 +17,7 @@ export class AppService {
             } else if (body.context.domain.includes("dent")) {
                 domainPath = `dent`;
             } else if (body.context.domain.includes("dhp")) {
-                domainPath = `dhp}`;
+                domainPath = `dhp`;
             } else if (body.context.domain.includes("supply-chain-services")) {
                 domainPath = `industry-4.0`;
             } else if (body.context.domain === "online-dispute-resolution:0.1.0") {
