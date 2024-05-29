@@ -6,7 +6,7 @@
         "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
         "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io",
         "country": "IND",
-        "city": "std:011",
+        "city": "std:080",
         "bap_id": "beckn-sandbox-bap.becknprotocol.io",
         "bap_uri": "https://sandbox-bap-network.becknprotocol.io",
         "transaction_id": "7afe44fd-d947-4a0a-81bc-d286784df2c1",
@@ -18,27 +18,21 @@
         "catalog": {
             "bpp/descriptor": {
                 "name": "Transit Solutions",
-                "images": [
-                    "https://transitsolutions.in/logos/logo.ico"
-                ]
+                "images": ["https://transitsolutions.in/logos/logo.ico"]
             },
             "bpp/providers": [
                 {
                     "id": "1",
                     "descriptor": {
                         "name": "Delhi Transport Corporation",
-                        "images": [
-                            "https://dtc.delhi.gov.in/logos/logo.ico"
-                        ]
+                        "images": ["https://dtc.delhi.gov.in/logos/logo.ico"]
                     },
                     "items": [
                         {
                             "id": "1",
                             "descriptor": {
                                 "name": "Single Journey Ticket",
-                                "images": [
-                                    "https://dtc.delhi.gov.in/icons/sjt.ico"
-                                ]
+                                "images": ["https://dtc.delhi.gov.in/icons/sjt.ico"]
                             },
                             "fulfillment_id": "1",
                             "price": {
@@ -50,9 +44,7 @@
                             "id": "2",
                             "descriptor": {
                                 "name": "Single Journey Ticket",
-                                "images": [
-                                    "https://dtc.delhi.gov.in/icons/sjt.ico"
-                                ]
+                                "images": ["https://dtc.delhi.gov.in/icons/sjt.ico"]
                             },
                             "fulfillment_id": "2",
                             "price": {
@@ -64,9 +56,7 @@
                             "id": "3",
                             "descriptor": {
                                 "name": "Single Journey Ticket",
-                                "images": [
-                                    "https://dtc.delhi.gov.in/icons/sjt.ico"
-                                ]
+                                "images": ["https://dtc.delhi.gov.in/icons/sjt.ico"]
                             },
                             "fulfillment_id": "3",
                             "price": {
@@ -78,9 +68,7 @@
                             "id": "4",
                             "descriptor": {
                                 "name": "Return Journey Ticket",
-                                "images": [
-                                    "https://dtc.delhi.gov.in/icons/rjt.ico"
-                                ]
+                                "images": ["https://dtc.delhi.gov.in/icons/rjt.ico"]
                             },
                             "fulfillment_id": "1",
                             "price": {
@@ -92,9 +80,7 @@
                             "id": "5",
                             "descriptor": {
                                 "name": "Return Journey Ticket",
-                                "images": [
-                                    "https://dtc.delhi.gov.in/icons/rjt.ico"
-                                ]
+                                "images": ["https://dtc.delhi.gov.in/icons/rjt.ico"]
                             },
                             "fulfillment_id": "2",
                             "price": {
@@ -106,9 +92,7 @@
                             "id": "6",
                             "descriptor": {
                                 "name": "Return Journey Ticket",
-                                "images": [
-                                    "https://dtc.delhi.gov.in/icons/rjt.ico"
-                                ]
+                                "images": ["https://dtc.delhi.gov.in/icons/rjt.ico"]
                             },
                             "fulfillment_id": "3",
                             "price": {
@@ -120,9 +104,7 @@
                             "id": "7",
                             "descriptor": {
                                 "name": "Monthly Pass",
-                                "images": [
-                                    "https://dtc.delhi.gov.in/icons/mp.ico"
-                                ]
+                                "images": ["https://dtc.delhi.gov.in/icons/mp.ico"]
                             },
                             "price": {
                                 "currency": "INR",
