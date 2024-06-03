@@ -26,7 +26,7 @@
             "status": "active",
             "location": {
                 "descriptor": {
-                    "name": "Last location of the Lab agent. ( incase of doorstep service)"
+                    "name": "Last location of the Tourist agent. ( incase of doorstep service)"
                 },
                 "gps": "12.971598, 77.594566"
             }
