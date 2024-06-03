@@ -22,7 +22,7 @@
     "message": {
         "feedback_form": {
             "form": {
-                "url": "url of the feedback form",
+                "url": "https://url-of-the-feedback-form.com",
                 "mime_type": "text/html"
             },
             "required": true
