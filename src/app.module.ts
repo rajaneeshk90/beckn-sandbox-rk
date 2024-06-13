@@ -14,6 +14,7 @@ import { LocalRetailModule } from "./local-retail/local-retail.module";
 import { TourismModule } from "./tourism/tourism.module";
 import { CityOfLightModule } from "./city-of-light/city-of-light.module";
 import { DSNPModule } from "./dsnp-osm/dsnp.module";
+import { LogisticModule } from "./logistic/logistic.module";
 
 @Module({
     imports: [
@@ -29,6 +30,7 @@ import { DSNPModule } from "./dsnp-osm/dsnp.module";
         TourismModule,
         CityOfLightModule,
         DSNPModule,
+        LogisticModule,
     ],
     controllers: [AppController],
     providers: [AppService],
