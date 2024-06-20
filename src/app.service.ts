@@ -27,7 +27,7 @@ export class AppService {
             } else if (body.context.domain.includes("tourism")) {
                 domainPath = `tourism`;
             } else if (body.context.domain.includes("logistics")) {
-                domainPath = `logistics`;
+                domainPath = `logistic`;
             } else if (body.context.domain.includes("localretail:shopping")) {
                 domainPath = `dsnp`;
             } else if (body.context.domain.includes("retail:CityOfLight")) {
