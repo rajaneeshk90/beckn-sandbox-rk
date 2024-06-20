@@ -40,6 +40,8 @@ export class AppService {
                     version = current_version;
                 }
                 domainPath = `retail/${version}`;
+            } else {
+                return;
             }
             const fullPath = `/${domainPath}/${body.context.action}`.replace("//", "/");
             const destinationUrl = `${ownAddress}${fullPath}`;
