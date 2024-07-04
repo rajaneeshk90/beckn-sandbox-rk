@@ -15,6 +15,7 @@ import { TourismModule } from "./tourism/tourism.module";
 import { CityOfLightModule } from "./city-of-light/city-of-light.module";
 import { DSNPModule } from "./dsnp-osm/dsnp.module";
 import { LogisticModule } from "./logistics/logistic.module";
+import { VistaarModule } from "./vistaar/vistaar.module";
 
 @Module({
     imports: [
@@ -31,6 +32,7 @@ import { LogisticModule } from "./logistics/logistic.module";
         CityOfLightModule,
         DSNPModule,
         LogisticModule,
+        VistaarModule,
     ],
     controllers: [AppController],
     providers: [AppService],
