@@ -40,6 +40,8 @@ export class AppService {
                     version = current_version;
                 }
                 domainPath = `retail/${version}`;
+            } else if (body.context.domain.includes("advisory:agrinet:vistaar")) {
+                domainPath = `vistaar-advisory`;
             } else {
                 return;
             }
@@ -133,7 +135,7 @@ export class AppService {
                 } catch (error: any) {
                     console.log("error=>", error.response?.data?.error?.data?.errors || error.message);
                 }
-            }, 2000);
+            });
         } catch (err: any) {
             console.log(err);
         }
