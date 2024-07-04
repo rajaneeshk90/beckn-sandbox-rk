@@ -51,6 +51,7 @@ export class AssemblyService implements Industry4_0ApiInterface {
             SelectResponse2.context.bpp_uri = BPP_URI;
             return SelectResponse2;
         }
+        return SelectResponse1;
     };
     init = (industry_4_0_Request_DTO: Industry_4_0_Request_DTO) => {
         InitResponse.context.bpp_id = BPP_ID;
