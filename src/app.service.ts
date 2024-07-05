@@ -40,7 +40,7 @@ export class AppService {
                     version = current_version;
                 }
                 domainPath = `retail/${version}`;
-            } else if (body.context.domain.includes("advisory:agrinet:vistaar")) {
+            } else if (body.context.domain.includes("knowledge-advisory:agrinet:vistaar")) {
                 domainPath = `vistaar-advisory`;
             } else {
                 return;

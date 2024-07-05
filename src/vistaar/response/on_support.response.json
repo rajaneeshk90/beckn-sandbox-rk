@@ -1,6 +1,6 @@
 {
     "context": {
-        "domain": "advisory:agrinet:vistaar",
+        "domain": "knowledge-advisory:agrinet:vistaar",
         "location": {
             "country": {
                 "code": "IND"
