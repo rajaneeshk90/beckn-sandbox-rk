@@ -24,11 +24,11 @@
             "provider": {
                 "id": "289edce4-d002-4962-b311-4c025e22b4f6",
                 "descriptor": {
-                    "name": "Max Hospitals",
-                    "short_desc": "Max Hospitals Pvt Ltd",
+                    "name": "my hospital",
+                    "short_desc": "my hospital Pvt Ltd",
                     "images": [
                         {
-                            "url": "https://maxhospitals.in/images/logo.png"
+                            "url": "https://myhospital.in/images/logo.png"
                         }
                     ]
                 }
@@ -66,7 +66,7 @@
                         },
                         "form": {
                             "mime_type": "text/html",
-                            "url": "https://6vs8xnx5i7.maxhospitals.co.in/medical-details/xinput/formid/a23f2fdfbbb8ac402bfd54f",
+                            "url": "https://6vs8xnx5i7.myhospital.co.in/medical-details/xinput/formid/a23f2fdfbbb8ac402bfd54f",
                             "resubmit": false,
                             "auth": {
                                 "descriptor": {

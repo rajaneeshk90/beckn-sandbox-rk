@@ -28,11 +28,11 @@
                 {
                     "id": "289edce4-d002-4962-b311-4c025e22b4f6",
                     "descriptor": {
-                        "name": "Max Hospitals",
-                        "short_desc": "Max Hospitals Pvt Ltd",
+                        "name": "my hospital",
+                        "short_desc": "my hospital Pvt Ltd",
                         "images": [
                             {
-                                "url": "https://maxhospitals.in/images/logo.png"
+                                "url": "https://myhospital.in/images/logo.png"
                             }
                         ]
                     },
